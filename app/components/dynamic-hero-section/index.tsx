@@ -4,12 +4,21 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
 import ButtonImage from "../shared ui/button";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const HeroSection: NextPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleClick = () => {
     console.log("Button clicked!");
   };
+  const pathname = usePathname();
+
+  // Fix: Use string instead of 'any' for type safety
+  const isActive = (path: string) =>
+    pathname === path
+      ? "text-red-600"
+      : "hover:text-gray-300 transition duration-300";
   return (
     <div className="relative bg-black min-h-screen overflow-hidden">
       {/* Background image */}
@@ -86,13 +95,23 @@ const HeroSection: NextPage = () => {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+          <div className="fixed inset-0 bg-gradient-to-b from-[#061226] to-[#030307] z-50 flex flex-col items-center justify-center text-center">
+            {/* Background Image */}
+            <Image
+              src="/dots.png"
+              alt="Background Dots"
+              layout="fill"
+              objectFit="cover"
+              className="z-0 opacity-50"
+            />
+
+            {/* Close Button */}
             <button
               onClick={() => setMenuOpen(false)}
-              className="absolute top-4 right-4 text-white focus:outline-none"
+              className="absolute top-4 right-4 text-white z-10 focus:outline-none"
             >
               <svg
-                className="w-8 h-8"
+                className="w-6 h-6 sm:w-8 sm:h-8"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -106,50 +125,47 @@ const HeroSection: NextPage = () => {
                 />
               </svg>
             </button>
-            <nav className="text-center">
-              <ul className="text-white text-2xl space-y-6">
+
+            {/* Logo */}
+            <div className="absolute top-6 left-6 z-10">
+              <Image
+                src="/logo.png"
+                alt="Beks Media Logo"
+                width={80}
+                height={80}
+              />
+            </div>
+
+            {/* Menu Items */}
+            <nav className="z-10">
+              <ul className="text-white text-3xl sm:text-4xl font-bold space-y-6">
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-600 transition duration-300"
-                  >
-                    Home
-                  </a>
+                  <Link href="/" className={isActive("/")}>
+                    BEKS MEDIA
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-600 transition duration-300"
-                  >
-                    About
-                  </a>
+                  <Link href="/about" className={isActive("/about")}>
+                    ABOUT US
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-600 transition duration-300"
-                  >
-                    Services
-                  </a>
+                  <Link href="/portfolio" className={isActive("/portfolio")}>
+                    PORTFOLIO
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-600 transition duration-300"
-                  >
-                    Work
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-red-600 transition duration-300"
-                  >
-                    Contact
-                  </a>
+                  <Link href="/article" className={isActive("/article")}>
+                    BLOGS
+                  </Link>
                 </li>
               </ul>
             </nav>
+
+            {/* Footer */}
+            <p className="absolute bottom-4 text-white text-sm z-10">
+              © Copyright 2025 Beks Media
+            </p>
           </div>
         )}
       </div>

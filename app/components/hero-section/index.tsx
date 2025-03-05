@@ -1,15 +1,24 @@
-// pages/index.tsx
 "use client";
+
+import { usePathname } from "next/navigation";
 import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
 import ButtonImage from "../shared ui/button";
+import Link from "next/link";
 
 const HeroSection: NextPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleClick = () => {
     console.log("Button clicked!");
   };
+  const pathname = usePathname();
+
+  // Fix: Use string instead of 'any' for type safety
+  const isActive = (path: string) =>
+    pathname === path
+      ? "text-red-600"
+      : "hover:text-gray-300 transition duration-300";
 
   return (
     <div className="relative bg-black min-h-screen overflow-hidden">
@@ -76,32 +85,26 @@ const HeroSection: NextPage = () => {
 
         {/* Main content */}
         <main className="flex-grow flex flex-col justify-center items-center text-center p-4 md:p-8">
-          <h1 className="text-white text-5xl sm:text-6xl md:text-9xl font-bold tracking-wider">
-            BEKS
-          </h1>
-          <h1 className="text-gray-500 text-5xl sm:text-6xl md:text-9xl font-bold tracking-wider">
-            MEDIA
-          </h1>
+          <Image
+            src={"/heading.png"}
+            width={100}
+            height={100}
+            alt="img"
+            className="w-[1000px] h-[500px] "
+          />
         </main>
 
         {/* "SEE OUR WORK" text */}
         <div className="absolute -right-6 sm:-right-10 top-1/2 transform -translate-y-1/2 hidden md:block">
-          <div className="text-white text-sm sm:text-lg font-bold transform rotate-90 flex items-center">
+          <div className="text-[#DC2F39] text-sm sm:text-lg font-bold transform rotate-90 flex items-center">
             SEE OUR WORK
-            <svg
-              className="w-4 h-4 sm:w-6 sm:h-6 ml-2 transform rotate-45"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
+            <Image
+              src={"/Vector.png"}
+              height={16}
+              width={16}
+              alt="image"
+              className=" -rotate-90 "
+            />
           </div>
         </div>
 
@@ -123,12 +126,21 @@ const HeroSection: NextPage = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-gradient-to-b from-[#061226] to-[#030307] z-50 flex flex-col items-center justify-center text-center">
+          {/* Background Image */}
+          <Image
+            src="/dots.png"
+            alt="Background Dots"
+            layout="fill"
+            objectFit="cover"
+            className="z-0 opacity-50"
+          />
+
+          {/* Close Button */}
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-4 right-4 text-white focus:outline-none"
+            className="absolute top-4 right-4 text-white z-10 focus:outline-none"
           >
             <svg
               className="w-6 h-6 sm:w-8 sm:h-8"
@@ -145,50 +157,47 @@ const HeroSection: NextPage = () => {
               />
             </svg>
           </button>
-          <nav className="text-center">
-            <ul className="text-white text-lg sm:text-2xl space-y-4 sm:space-y-6">
+
+          {/* Logo */}
+          <div className="absolute top-6 left-6 z-10">
+            <Image
+              src="/logo.png"
+              alt="Beks Media Logo"
+              width={80}
+              height={80}
+            />
+          </div>
+
+          {/* Menu Items */}
+          <nav className="z-10">
+            <ul className="text-white text-3xl sm:text-4xl font-bold space-y-6">
               <li>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition duration-300"
-                >
-                  Home
-                </a>
+                <Link href="/" className={isActive("/")}>
+                  BEKS MEDIA
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition duration-300"
-                >
-                  About
-                </a>
+                <Link href="/about" className={isActive("/about")}>
+                  ABOUT US
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition duration-300"
-                >
-                  Services
-                </a>
+                <Link href="/portfolio" className={isActive("/portfolio")}>
+                  PORTFOLIO
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition duration-300"
-                >
-                  Work
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition duration-300"
-                >
-                  Contact
-                </a>
+                <Link href="/article" className={isActive("/article")}>
+                  BLOGS
+                </Link>
               </li>
             </ul>
           </nav>
+
+          {/* Footer */}
+          <p className="absolute bottom-4 text-white text-sm z-10">
+            © Copyright 2025 Beks Media
+          </p>
         </div>
       )}
     </div>

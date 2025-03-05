@@ -18,43 +18,49 @@ const WhatWeDoSection: React.FC = () => {
       id: 1,
       title: "BRANDING & STORYTELLING",
       description: "Build unforgettable narratives",
-      imageSrc: "/image1.png",
+      imageSrc: "/image-1.png",
     },
     {
       id: 2,
       title: "GROWTH & COMMUNITY ENGAGEMENT",
       description: "Organic & viral strategies",
-      imageSrc: "/image2.png",
+      imageSrc: "/image-2.png",
     },
     {
       id: 3,
       title: "CAMPAIGN EXECUTION & SCALE",
       description: "Go-to-market & Web3 advertising",
-      imageSrc: "/image3.png",
+      imageSrc: "/image-3.png",
     },
     {
       id: 4,
       title: "WEBSITE DESIGN & PROGRAMMING",
       description: "UX/UI-focused Web3 & startup sites",
-      imageSrc: "/image4.png",
+      imageSrc: "/image-4.png",
     },
     {
       id: 5,
       title: "GOOGLE SEO & OPTIMIZATION",
       description: "Boost search rankings & online visibility",
-      imageSrc: "/image1.png",
+      imageSrc: "/image-5.png",
     },
     {
       id: 6,
       title: "SOCIAL MEDIA MANAGEMENT",
       description: "Content, strategy & engagement",
-      imageSrc: "/image2.png",
+      imageSrc: "/image-6.png",
     },
     {
       id: 7,
       title: "BUSINESS & MARKETING ADVISORY",
       description: "(via Rebekah Jenkins Consulting)",
-      imageSrc: "/image3.png",
+      imageSrc: "/image-7.png",
+    },
+    {
+      id: 8,
+      title: "KEYNOTE SPEAKER",
+      description: "(via Rebekah Jenkins Consulting)",
+      imageSrc: "/image-8.png",
     },
   ];
 
@@ -68,7 +74,7 @@ const WhatWeDoSection: React.FC = () => {
   }
 
   return (
-    <div className="bg-gradient-to-b from-[#061226] to-[#030307] text-white py-16 px-4 min-h-screen md:px-8 lg:px-16 rounded-tl-[30px] rounded-tr-[30px]">
+    <div className="bg-gradient-to-b my-20 from-[#061226] to-[#030307] text-white py-16 px-4 min-h-screen md:px-8 lg:px-16 rounded-tl-[30px] rounded-tr-[30px]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center tracking-wider">
           WHAT WE DO

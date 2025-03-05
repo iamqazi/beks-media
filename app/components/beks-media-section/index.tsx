@@ -53,7 +53,7 @@ const BeksMediaNumbers: React.FC = () => {
                 <div className="bg-zinc-900 rounded-lg overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full  md:w-[385px]">
                   <div className="relative h-64 w-full mb-2">
                     <Image
-                      src="/image11.png"
+                      src="/poster1.png"
                       alt="Project Advisory"
                       layout="fill"
                       objectFit="cover"
@@ -70,7 +70,7 @@ const BeksMediaNumbers: React.FC = () => {
                 <div className="bg-blue-900 rounded-lg overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full md:max-w-[385px]">
                   <div className="relative h-64 w-full mb-2">
                     <Image
-                      src="/image5.png"
+                      src="/poster2.png"
                       alt="Years of Service"
                       layout="fill"
                       objectFit="cover"
