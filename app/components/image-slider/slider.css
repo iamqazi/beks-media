@@ -1,0 +1,14 @@
+/* slider.css */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 1px solid white; /* White border for non-active bullets */
+  background-color: transparent;
+  opacity: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important; /* White color for the active bullet */
+  border: none;
+}

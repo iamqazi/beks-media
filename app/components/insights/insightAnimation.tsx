@@ -51,7 +51,7 @@ const FutureAnimation: React.FC = () => {
             cy={centerY}
             r={radius}
             fill="none"
-            stroke="rgba(249, 249, 249, 0.442)"
+            stroke="rgba(249, 249, 249, 0.878)"
             strokeWidth="1"
             strokeDasharray={index % 2 === 0 ? "none" : "5,8"}
             transform={`rotate(${
@@ -84,11 +84,11 @@ const FutureAnimation: React.FC = () => {
                   cy={y}
                   r="6"
                   fill="none"
-                  stroke="#c9cbcfdf"
+                  stroke="#c9cbcf"
                   strokeWidth="1.5"
                 />
                 {/* Inner Dot */}
-                <circle cx={x} cy={y} r="3" fill="#c9cbcfdf" />
+                <circle cx={x} cy={y} r="3" fill="#c9cbcf" />
               </g>
             ) : (
               <circle
@@ -96,7 +96,7 @@ const FutureAnimation: React.FC = () => {
                 cx={x}
                 cy={y}
                 r="4"
-                fill="#c9cbcfdf"
+                fill="#c9cbcf"
               />
             );
           });

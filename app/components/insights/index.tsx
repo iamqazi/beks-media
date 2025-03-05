@@ -23,7 +23,7 @@ export default function Insight() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider text-center md:text-left mb-6">
                 WANT CUTTING-
                 <br />
-                EDGE WEB3
+                EDGE WEB3.0
                 <br />
                 INSIGHTS?
               </h1>
