@@ -9,8 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        red: {
+          600: "#ff3333",
+          700: "#cc0000",
+        },
+      },
+      fontFamily: {
+        akira: ["Akira Expanded", "sans-serif"],
       },
     },
   },

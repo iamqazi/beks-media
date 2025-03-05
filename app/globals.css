@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/akira-expanded");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: "Akira Expanded";
+  src: url("https://fonts.cdnfonts.com/css/akira-expanded"); /* Use .ttf if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Akira Expanded", sans-serif;
 }
