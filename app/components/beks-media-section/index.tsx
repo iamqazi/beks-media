@@ -38,9 +38,13 @@ const BeksMediaNumbers: React.FC = () => {
                   📈 <span className="font-[800]">3M+ views on YouTube</span> in
                   4 weeks with “Rebekah Jenkins Consulting” the business
                   advisory branch of our business.
-                  <span className="text-red-700 whitespace-normal font-light">
+                  <a
+                    target="blank"
+                    href="https://www.youtube.com/@rebekah.Jenkins"
+                    className="text-red-700 whitespace-normal font-light"
+                  >
                     (https://www.youtube.com/ @rebekah.Jenkins)
-                  </span>
+                  </a>
                 </p>
               </div>
             </div>
