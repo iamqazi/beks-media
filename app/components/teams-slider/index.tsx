@@ -67,7 +67,7 @@ const TeamSlider: React.FC = () => {
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-center mb-[100px] gap-6 px-6">
         {teamMember.map((member, index) => (
-          <div key={index} className="relative w-full md:w-1/3">
+          <div key={index} className="relative md:w-[400px] w-full">
             <Image
               src={member.image}
               alt={member.name}
@@ -76,7 +76,7 @@ const TeamSlider: React.FC = () => {
               className="rounded-lg object-cover"
             />
             <div className="absolute bottom-0 left-0 w-full p-4">
-              <h3 className="text-white text-[32px] font-bold">
+              <h3 className="text-white whitespace-normal text-[25px] font-bold">
                 {member.name}
               </h3>
               <p className="text-gray-300 text-[24px]">{member.role}</p>

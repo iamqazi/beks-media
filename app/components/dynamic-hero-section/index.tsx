@@ -79,7 +79,7 @@ const HeroSection: NextPage = () => {
               Articles
             </h1>
             {/* Added Paragraph */}
-            <p className="text-white text-[18px] md:text-[24px] mt-4 max-w-4xl">
+            <p className="text-white font-sans text-[18px] md:text-[24px] mt-4 max-w-4xl">
               What sets us apart from other marketing agencies is that our team
               is composed of digital nomads who understand the travel lifestyle.
               We know what works and what just doesn&apos;t cut it.We call our

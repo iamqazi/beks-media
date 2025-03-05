@@ -59,7 +59,7 @@ const BlogCards: React.FC = () => {
                 height={200}
                 src={post.backgroundImage}
                 alt={post.title}
-                className="absolute inset-0 w-full h-full object-cover  "
+                className="absolute inset-0 w-full h-full object-contain lg:object-cover"
               />
             </div>
 
@@ -111,7 +111,9 @@ const BlogCards: React.FC = () => {
                       <path d="M12 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <span className="text-white pr-4 text-base">Read Now</span>
+                  <span className="text-white text-[14px] md:text-[18px] pr-4 text-base">
+                    Read Now
+                  </span>
                 </button>
                 <button className="bg-[#15131A] w-[187px] h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
                   <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">
@@ -122,7 +124,9 @@ const BlogCards: React.FC = () => {
                       alt="img"
                     />
                   </div>
-                  <span className="text-white pr-4 text-base">Sahre Post</span>
+                  <span className="text-white pr-4 text-[14px] md:text-[18px]  text-base">
+                    Share Post
+                  </span>
                 </button>
               </div>
             </div>

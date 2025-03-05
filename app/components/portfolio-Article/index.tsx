@@ -81,7 +81,7 @@ const ArticleHero: NextPage = () => {
             </h1>
 
             {/* Paragraph text */}
-            <p className="text-white text-base sm:text-lg md:text-[24px] mt-4 max-w-lg sm:max-w-2xl md:max-w-4xl">
+            <p className="text-white font-sans text-base sm:text-lg md:text-[24px] mt-4 max-w-lg sm:max-w-2xl md:max-w-4xl">
               What sets us apart from other marketing agencies is that our team
               is composed of digital nomads who understand the travel lifestyle.
               We know what works and what just doesn&apos;t cut it. We call our

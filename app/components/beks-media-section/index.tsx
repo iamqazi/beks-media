@@ -34,7 +34,7 @@ const BeksMediaNumbers: React.FC = () => {
 
               {/* YouTube Stats */}
               <div className="mt-8">
-                <p className="text-white text-[24px] text-center md:text-left">
+                <p className="text-white text-[24px] font-sans text-center md:text-left">
                   📈 <span className="font-[800]">3M+ views on YouTube</span> in
                   4 weeks with “Rebekah Jenkins Consulting” the business
                   advisory branch of our business.
@@ -56,11 +56,10 @@ const BeksMediaNumbers: React.FC = () => {
                       src="/poster1.png"
                       alt="Project Advisory"
                       layout="fill"
-                      objectFit="cover"
-                      className="rounded"
+                      className="rounded object-contain lg:object-cover "
                     />
                   </div>
-                  <p className="text-white text-[24px] text-center md:text-left">
+                  <p className="text-white font-sans text-[24px] text-center md:text-left">
                     🎯 <span className="font-[800]">$250M+</span> real world
                     assets project advisory
                   </p>
@@ -77,7 +76,7 @@ const BeksMediaNumbers: React.FC = () => {
                       className="rounded"
                     />
                   </div>
-                  <p className="text-white text-[24px] text-center md:text-left">
+                  <p className="text-white font-sans text-[24px] text-center md:text-left">
                     <span className="font-[800]">9 years</span> of delivering
                     results and serving our customers
                   </p>
@@ -88,12 +87,12 @@ const BeksMediaNumbers: React.FC = () => {
               <div className="bg-zinc-900 relative w-full p-6 md:p-8 overflow-hidden lg:w-[800px]">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                   <div className="z-10">
-                    <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
+                    <h2 className="text-white font-sans text-3xl md:text-4xl font-bold leading-tight">
                       2 World Market Leaders
                     </h2>
-                    <p className="text-white text-xl mt-2 mb-6">
+                    <p className="text-white font-sans text-xl mt-2 mb-6">
                       managing multinational campaigns
-                      <br className="hidden md:block" />
+                      <br className="hidden font-sans md:block" />
                       in multiple languages
                     </p>
                     <a

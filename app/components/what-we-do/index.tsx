@@ -29,13 +29,13 @@ const WhatWeDoSection: React.FC = () => {
     {
       id: 3,
       title: "CAMPAIGN EXECUTION & SCALE",
-      description: "Go-to-market & Web3 advertising",
+      description: "Go-to-market & Web 3.0 advertising",
       imageSrc: "/image-3.png",
     },
     {
       id: 4,
       title: "WEBSITE DESIGN & PROGRAMMING",
-      description: "UX/UI-focused Web3 & startup sites",
+      description: "UX/UI-focused Web 3.0 & startup sites",
       imageSrc: "/image-4.png",
     },
     {
@@ -94,7 +94,7 @@ const WhatWeDoSection: React.FC = () => {
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-wider mb-2 md:mb-0">
                   {service.title}
                 </h3>
-                <p className="text-sm md:text-base lg:text-lg text-gray-400">
+                <p className="text-sm  text-right font-sans md:text-base lg:text-lg text-gray-400">
                   {service.description}
                 </p>
               </div>

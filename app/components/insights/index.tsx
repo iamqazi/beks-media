@@ -20,15 +20,15 @@ export default function Insight() {
           <div className="flex flex-col md:flex-row">
             {/* Left Content - Text and Form */}
             <div className="w-full md:w-3/5 p-8 md:p-12 flex flex-col items-center md:items-start justify-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider text-center md:text-left mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wider text-center md:text-left mb-6">
                 WANT CUTTING-
                 <br />
-                EDGE WEB3.0
+                EDGE Web 3.0
                 <br />
                 INSIGHTS?
               </h1>
 
-              <p className="text-white text-lg md:text-xl mb-8 text-center md:text-left">
+              <p className="text-white font-sans text-lg md:text-xl mb-8 text-center md:text-left">
                 Subscribe to our newsletter and never miss an update!
               </p>
 
@@ -38,7 +38,7 @@ export default function Insight() {
                   placeholder="Your email"
                   className="flex-grow px-6 py-3 rounded-lg bg-blue-800/50 border border-blue-400/30 text-white placeholder-blue-200/70 focus:outline-none focus:ring-2 focus:ring-white"
                 />
-                <button className="whitespace-nowrap bg-white text-blue-800 font-semibold py-3 px-6 rounded-lg hover:bg-blue-50 transition duration-300">
+                <button className="whitespace-nowrap font-sans bg-white text-blue-800 font-semibold py-3 px-6 rounded-lg hover:bg-blue-50 transition duration-300">
                   Join Us Today
                 </button>
               </div>

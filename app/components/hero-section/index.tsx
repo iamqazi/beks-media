@@ -115,8 +115,8 @@ const HeroSection: NextPage = () => {
               <br />
               DESERVES RECOGNITION
             </div>
-            <p className="text-white text-base sm:text-lg md:text-xl mb-6 md:mb-16 max-w-2xl">
-              We transform Web3.0 startups into iconic brands through strategic
+            <p className="text-white text-base font-sans sm:text-lg md:text-xl mb-6 md:mb-16 max-w-2xl">
+              We transform Web 3.0 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
           </div>

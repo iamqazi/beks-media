@@ -89,7 +89,7 @@ const PortfolioUI: React.FC = () => {
                 <h2 className="text-2xl md:text-[38px] font-bold mb-4">
                   {item.title}
                 </h2>
-                <p className="text-gray-300 mb-6 text-[16px] md:text-lg">
+                <p className="text-gray-300 font-sans mb-6 text-[16px] md:text-lg">
                   {item.description}
                 </p>
 

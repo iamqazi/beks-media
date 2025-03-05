@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-400 mb-6">
-              We transform Web3 startups into iconic brands through strategic
+              We transform Web 3.0 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
 
