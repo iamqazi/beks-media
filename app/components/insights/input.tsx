@@ -35,7 +35,7 @@ export default function EmailInput() {
       />
       <button
         type="submit"
-        className="ml-2 font-sans font-[500] px-4 py-2 text-black bg-white rounded-md"
+        className="ml-2 font-sans text-[9px] md:text-[15px] font-[500] px-4 py-2 text-black bg-white rounded-md"
       >
         Join Us Today
       </button>

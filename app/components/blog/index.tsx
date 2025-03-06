@@ -94,7 +94,7 @@ const BlogCards: React.FC = () => {
               </p>
 
               <div className="flex space-x-4">
-                <button className="bg-[#15131A] w-[187px] h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
+                <button className="bg-[#15131A] w-[187px]  h-[50px] md:h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
                   <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ const BlogCards: React.FC = () => {
                     Read Now
                   </span>
                 </button>
-                <button className="bg-[#15131A] w-[187px] h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
+                <button className="bg-[#15131A] w-[187px] h-[50px] md:h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
                   <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">
                     <Image
                       src={"/share.png"}
