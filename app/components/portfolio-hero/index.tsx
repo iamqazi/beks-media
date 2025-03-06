@@ -25,7 +25,7 @@ const PortfolioHero: NextPage = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/Background2.png"
+          src="/bg1.jpg"
           alt="Space background"
           layout="fill"
           objectPosition="center"
@@ -81,11 +81,7 @@ const PortfolioHero: NextPage = () => {
 
             {/* Paragraph text */}
             <p className="text-white font-sans text-base sm:text-lg md:text-[24px] mt-4 max-w-lg sm:max-w-2xl md:max-w-4xl">
-              What sets us apart from other marketing agencies is that our team
-              is composed of digital nomads who understand the travel lifestyle.
-              We know what works and what just doesn&apos;t cut it. We call our
-              team “the crew” and we are an international band
-              of wayfinders spread across four continents.
+              A little sample of what we&apos;ve done
             </p>
 
             {/* Contact Button */}

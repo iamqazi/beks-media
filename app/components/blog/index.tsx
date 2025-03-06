@@ -64,7 +64,7 @@ const BlogCards: React.FC = () => {
             </div>
 
             {/* Card Content */}
-            <div className="p-6">
+            <div className="py-6">
               <div className="flex items-center mb-4">
                 <Image
                   src="/profile.png"

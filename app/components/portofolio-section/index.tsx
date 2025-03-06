@@ -76,11 +76,11 @@ const PortfolioUI: React.FC = () => {
               {/* Project Image */}
               <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
                 <Image
-                  height={500}
-                  width={600}
+                  height={570}
+                  width={610}
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-auto max-h-[500px]  object-center"
+                  className="w-full h-auto max-h-[500px]  object-contain"
                 />
               </div>
 

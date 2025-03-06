@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import ButtonImage from "../shared ui/button";
 
 const BeksMediaNumbers: React.FC = () => {
+  const handleClick = () => {
+    console.log("Button clicked!");
+  };
   return (
     <div className="flex justify-center items-center min-h-screen bg-black">
       <div className="bg-black w-full py-16">
@@ -54,13 +58,20 @@ const BeksMediaNumbers: React.FC = () => {
               {/* Top Two Cards */}
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Project Advisory Card */}
-                <div className="bg-zinc-900 rounded-lg overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full  md:w-[385px]">
-                  <div className="relative h-64 w-full mb-2">
+                <div
+                  style={{
+                    borderImageSource:
+                      "linear-gradient(94.9deg, rgba(255, 255, 255, 0.15) 16%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.15) 37%)",
+                    borderImageSlice: 1,
+                  }}
+                  className="bg-zinc-900  overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full md:h-[318px]  md:w-[385px]"
+                >
+                  <div className="relative h-[175px] w-full mb-2">
                     <Image
-                      src="/poster1.png"
+                      src="/post1.png"
                       alt="Project Advisory"
                       layout="fill"
-                      className="rounded object-contain lg:object-cover "
+                      className="rounded object-contain "
                     />
                   </div>
                   <p className="text-white font-sans text-[24px] text-center md:text-left">
@@ -70,14 +81,21 @@ const BeksMediaNumbers: React.FC = () => {
                 </div>
 
                 {/* Years of Service Card */}
-                <div className="bg-blue-900 rounded-lg overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full md:max-w-[385px]">
-                  <div className="relative h-64 w-full mb-2">
+                <div
+                  style={{
+                    borderImageSource:
+                      "linear-gradient(94.9deg, rgba(255, 255, 255, 0.15) 16%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.15) 37%)",
+                    borderImageSlice: 1,
+                  }}
+                  className=" overflow-hidden p-[22px] border-[0.94px] h-[318px] relative w-full md:max-w-[385px] 
+                 bg-[url('/blue.png')] bg-cover bg-center"
+                >
+                  <div className="relative h-[175px] w-full mb-2">
                     <Image
-                      src="/poster2.png"
-                      alt="Years of Service"
+                      src="/post2.png"
+                      alt="Project Advisory"
                       layout="fill"
-                      objectFit="cover"
-                      className="rounded"
+                      className="rounded object-contain "
                     />
                   </div>
                   <p className="text-white font-sans text-[24px] text-center md:text-left">
@@ -88,9 +106,16 @@ const BeksMediaNumbers: React.FC = () => {
               </div>
 
               {/* World Market Leaders Card */}
-              <div className="bg-zinc-900 relative w-full p-6 md:p-8 overflow-hidden lg:w-[800px]">
-                <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                  <div className="z-10">
+              <div
+                style={{
+                  borderImageSource:
+                    "linear-gradient(94.9deg, rgba(255, 255, 255, 0.15) 16%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.15) 37%)",
+                  borderImageSlice: 1,
+                }}
+                className="bg-zinc-900 border relative w-full p-6 md:p-8 overflow-hidden lg:w-[800px]"
+              >
+                <div className="flex flex-col sm:items-center md:flex-row md:justify-between md:items-center">
+                  <div className="z-10 text-center sm:text-left">
                     <h2 className="text-white font-sans text-3xl md:text-4xl font-bold leading-tight">
                       2 World Market Leaders
                     </h2>
@@ -99,36 +124,24 @@ const BeksMediaNumbers: React.FC = () => {
                       <br className="hidden font-sans md:block" />
                       in multiple languages
                     </p>
-                    <a
-                      href="#"
-                      className="inline-flex items-center border border-white text-white py-3 px-6 hover:bg-white hover:text-black transition-all duration-300"
-                    >
-                      <svg
-                        className="w-4 h-4 mr-2"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 12H19M19 12L12 5M19 12L12 19"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      SEE OUR WORK
-                    </a>
+                    <div className="mb-8">
+                      <ButtonImage
+                        icon="/new.png"
+                        text="See Our Work"
+                        onClick={handleClick}
+                      />
+                    </div>
                   </div>
 
-                  <div className="absolute right-0 top-6 hidden xl:block md:relative md:top-0 md:mt-0 z-0 md:z-10">
-                    <div className="relative w-[240px] h-[140px] md:w-[320px] md:h-[180px]">
+                  <div className="relative md:top-0 mt-10 md:mt-0 z-0 md:z-10">
+                    <div className="w-full h-full md:w-[340px] md:h-[220px] flex justify-center">
                       <Image
                         src="/image33.png"
                         alt="Sunray Coin"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded !h-[190px] absolute right-0 !w-[286px]"
+                        layout="intrinsic"
+                        width={286}
+                        height={190}
+                        className="rounded w-full h-full object-cover"
                       />
                     </div>
                   </div>

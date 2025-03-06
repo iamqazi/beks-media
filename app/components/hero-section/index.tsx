@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ButtonImage from "../shared ui/button";
 import Link from "next/link";
+import AnimatedBackground from "./dots";
 
 const HeroSection: NextPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +23,7 @@ const HeroSection: NextPage = () => {
 
   return (
     <div className="relative bg-black min-h-screen overflow-hidden">
+      <AnimatedBackground />
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
@@ -34,12 +36,12 @@ const HeroSection: NextPage = () => {
       </div>
 
       {/* Unicorn silhouette on the bottom left */}
-      <div className="absolute bottom-40 left-2 z-10 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32">
+      <div className="absolute bottom-[420px] left-2 z-10 w-[300px] h-[224px]">
         <Image
           src="/horse.png"
           alt="Unicorn silhouette"
-          width={130}
-          height={130}
+          width={300}
+          height={224}
           objectFit="contain"
         />
       </div>
@@ -58,9 +60,13 @@ const HeroSection: NextPage = () => {
         {/* Header */}
         <header className="p-4 md:p-8 flex justify-between items-center">
           <div className="text-white font-bold text-lg sm:text-xl md:text-2xl">
-            BEKS
-            <br />
-            MEDIA
+            <Image
+              src="/logo.png"
+              alt="Blur effect"
+              width={122}
+              height={50}
+              objectFit="contain"
+            />
           </div>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -86,7 +92,7 @@ const HeroSection: NextPage = () => {
         {/* Main content */}
         <main className="flex-grow flex flex-col justify-center items-center text-center p-4 md:p-8">
           <Image
-            src={"/heading.png"}
+            src={"/text.svg"}
             width={100}
             height={100}
             alt="img"
@@ -95,20 +101,20 @@ const HeroSection: NextPage = () => {
         </main>
 
         {/* "SEE OUR WORK" text */}
-        <div className="absolute -right-6 sm:-right-10 top-1/2 transform -translate-y-1/2 hidden md:block">
-          <div className="text-[#DC2F39] text-sm sm:text-lg font-bold transform rotate-90 flex items-center">
+        <div className="absolute -right-16  top-1/2 transform -translate-y-1/2 hidden md:block">
+          <div className="text-[#DC2F39] text-[24px] font-bold transform rotate-90 flex items-center">
             SEE OUR WORK
             <Image
               src={"/Vector.png"}
-              height={16}
-              width={16}
+              height={27}
+              width={35}
               alt="image"
-              className=" -rotate-90 "
+              className="ml-2 -rotate-90 "
             />
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center mx-4 sm:mx-12 md:mx-[97px] text-center md:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center mx-4  md:mx-[97px] text-center md:text-left">
           <div className="flex flex-col mb-6 md:mb-0">
             <div className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-8">
               YOUR INNOVATION

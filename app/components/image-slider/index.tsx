@@ -19,9 +19,9 @@ const images = [
   "/sliders8.png",
   "/sliders9.png",
   "/sliders10.png",
-  "/sliders11.png",
+  "/newsliders.jpg",
   "/sliders12.png",
-  "/sliders13.png",
+  "/newslider.jpg",
   "/sliders14.png",
   "/sliders15.png",
   "/sliders16.png",
@@ -32,7 +32,7 @@ const images = [
 const ImageSlider = () => {
   return (
     <section className="py-20">
-      <div className="max-w-5xl mx-auto px-5">
+      <div className="max-w-7xl mx-auto px-5">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
@@ -41,20 +41,23 @@ const ImageSlider = () => {
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           breakpoints={{
-            640: { slidesPerView: 1.25, spaceBetween: 20 },
-            1024: { slidesPerView: 2, spaceBetween: 20 },
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            1024: { slidesPerView: 1, spaceBetween: 20 },
+            1280: { slidesPerView: 1, spaceBetween: 20 },
           }}
           className="rounded-lg shadow-lg custom-pagination"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <Image
-                src={src}
-                alt={`Slide ${index + 1}`}
-                width={800}
-                height={400}
-                className="w-full h-96 object-contain rounded-lg"
-              />
+              <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] flex justify-center">
+                <Image
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  width={1280}
+                  height={640}
+                  className="w-full max-w-[1280px] h-full object-contain rounded-lg"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

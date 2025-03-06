@@ -24,7 +24,7 @@ const HeroSection: NextPage = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/Background2.png"
+          src="/bg1.jpg"
           alt="Space background"
           layout="fill"
           objectPosition="center"
@@ -76,7 +76,7 @@ const HeroSection: NextPage = () => {
           {/* BEKS MEDIA large text */}
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-[36px] md:text-[70px] lg:text-[128px] text-white font-akira font-[800] leading-tight">
-              Articles
+              About Us
             </h1>
             {/* Added Paragraph */}
             <p className="text-white font-sans text-[18px] md:text-[24px] mt-4 max-w-4xl">
