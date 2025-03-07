@@ -129,7 +129,7 @@ export default function ArticlePage() {
             {/* Article Content */}
             <div className="flex flex-col justify-center items-center">
               {" "}
-              <p className="mt-[60px] text-[28px]  text-white font-serif max-w-[1280px]">
+              <span className="mt-[60px] text-[28px]  text-white font-sans max-w-[1280px]">
                 Lorem ipsum dolor sit amet consectetur. Lectus pellentesque
                 lacinia sapien diam tincidunt risus.. Et enim mattis varius diam
                 augue quis ipsum diam.. Feugiat nunc enim malesuada ipsum
@@ -137,7 +137,7 @@ export default function ArticlePage() {
                 tristique diam blandit.. Ut leo sollicitudin fames purus proin
                 urna arcu bibendum eu.. Convallis consequat vel adipiscing quam.
                 Feugiat lectus tellus non lectus maecenas fermentum.
-              </p>
+              </span>
             </div>
             <div className="flex justify-start mt-8 items-center gap-2">
               <Image
