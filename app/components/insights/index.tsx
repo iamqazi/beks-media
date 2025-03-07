@@ -20,7 +20,7 @@ export default function Insight() {
             height={430}
             width={560}
             objectFit="contain"
-            className="z-10 md:w-[350px] md:bottom-[70px] hidden md:flex md:right-0 lg:right-[70px] lg:bottom-[70px] xl:bottom-[20px] xl:w-[560px] xl:h-[430px] xl:right-[80px] lg:w-[450px] absolute md:bottom-15"
+            className="z-10 md:w-[350px] md:bottom-[70px] hidden md:flex md:right-0 lg:right-[70px] lg:bottom-[70px] xl:bottom-[20px] xl:w-[560px] xl:h-[430px] xl:right-[95px] lg:w-[450px] absolute md:bottom-15"
           />
         </div>
 
