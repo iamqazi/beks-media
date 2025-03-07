@@ -170,7 +170,7 @@ export default function ArticlePage() {
                   <h2 className="text-[30px] font-sans my-4 text-white uppercase md:text-[50px] font-bold mt-2">
                     LOREM IPSUM DOLOR SIT AMET
                   </h2>
-                  <p className="text-[#ADADAD] text-[16px] md:text-[20px] mt-2">
+                  <p className="text-[#ADADAD] font-sans text-[16px] md:text-[20px] mt-2">
                     Lorem ipsum dolor sit amet consectetur. Maecenas odio in
                     augue cursus eu.. Purus a amet facilisis magna eros ac
                     semper nam ipsum.. Cras non diam ac volutpat auctor nibh
