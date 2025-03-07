@@ -25,7 +25,7 @@ export default function EmailInput() {
         onChange={handleChange}
         required
         pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
-        className="flex-1 p-3 text-white placeholder-gray-300 bg-transparent outline-none"
+        className="flex-1 p-3 font-sans text-white placeholder-gray-300 bg-transparent outline-none"
         onInvalid={(e) =>
           (e.target as HTMLInputElement).setCustomValidity(
             "Please enter a valid email"
@@ -35,7 +35,7 @@ export default function EmailInput() {
       />
       <button
         type="submit"
-        className="font-sans text-[9px] md:text-[15px] font-[500] px-2 md:px-4 py-2 text-black bg-white rounded-md"
+        className="font-sans w-40 text-[15px] font-[500] px-2 md:px-4 py-2 text-black bg-white rounded-md"
       >
         Join Us Today
       </button>

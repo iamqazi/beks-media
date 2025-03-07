@@ -27,8 +27,8 @@ export default function Insight() {
         {/* Content */}
         <div className="relative px-4 sm:px-8 md:px-12 flex flex-col md:flex-row items-center w-full max-w-6xl">
           {/* Left Content - Text and Form */}
-          <div className="w-full md:w-3/5 py-6 md:py-12 flex flex-col items-center md:items-start">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-center md:text-left mb-2 lg:mb-6">
+          <div className="w-full md:w-3/5 py-6 md:py-12 flex flex-col items-center ">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-center  mb-2 lg:mb-6">
               WANT CUTTING-
               <br />
               EDGE Web 3.0
@@ -36,11 +36,11 @@ export default function Insight() {
               INSIGHTS?
             </h1>
 
-            <p className="font-sans text-sm sm:text-base md:text-lg mb-2 lg:mb-6 text-center md:text-left">
+            <p className="font-sans text-sm sm:text-base md:text-lg mb-2 lg:mb-6 text-center ">
               Subscribe to our newsletter and never miss an update!
             </p>
 
-            <div className="w-full flex flex-col sm:flex-row gap-4">
+            <div className="w-full flex flex-col sm:flex-row gap-4 justify-center">
               <EmailInput />
             </div>
           </div>

@@ -111,7 +111,7 @@ const BlogCards: React.FC = () => {
                       <path d="M12 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <span className="text-white text-[14px] md:text-[18px] pr-4 text-base">
+                  <span className="text-white font-sans text-[14px] md:text-[18px] pr-4 text-base">
                     Read Now
                   </span>
                 </button>
@@ -124,7 +124,7 @@ const BlogCards: React.FC = () => {
                       alt="img"
                     />
                   </div>
-                  <span className="text-white pr-4 text-[14px] md:text-[18px]  text-base">
+                  <span className="text-white font-sans pr-4 text-[14px] md:text-[18px]  text-base">
                     Share Post
                   </span>
                 </button>

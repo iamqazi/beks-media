@@ -68,7 +68,7 @@ const BeksMediaNumbers: React.FC = () => {
                 >
                   <div className="relative h-[175px] w-full mb-2">
                     <Image
-                      src="/post1.png"
+                      src="/poster1.png"
                       alt="Project Advisory"
                       layout="fill"
                       className="rounded object-contain "
@@ -92,7 +92,7 @@ const BeksMediaNumbers: React.FC = () => {
                 >
                   <div className="relative h-[175px] w-full mb-2">
                     <Image
-                      src="/post2.png"
+                      src="/poster2.png"
                       alt="Project Advisory"
                       layout="fill"
                       className="rounded object-contain "

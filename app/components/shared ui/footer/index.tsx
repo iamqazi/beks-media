@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
 
         {/* CTA Section */}
         <div className="text-center py-10">
-          <h2 className="text-5xl md:text-7xl font-bold mb-4 tracking-wide">
+          <h2 className="text-5xl md:text-6xl lg:text-[120px] font-bold mb-4 tracking-wide">
             JOIN US TODAY
           </h2>
         </div>

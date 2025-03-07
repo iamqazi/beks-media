@@ -94,13 +94,14 @@ const WhatWeDoSection: React.FC = () => {
               {/* Lowered Image Placement on Hover */}
               {hoveredImage === service.id && (
                 <div className="absolute inset-0 flex items-center justify-end z-10 pointer-events-none">
-                  <div className="relative w-40 h-32 sm:w-48 sm:h-36 md:w-64 md:h-48 right-0 md:right-1/3 top-2/3 transform -translate-y-[40%] -rotate-12">
+                  <div className="relative w-32 h-24 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-[300px] lg:h-[270px] right-0 md:right-1/3 top-2/3 transform -translate-y-[40%] -rotate-12 transition-transform duration-300">
                     <Image
                       src={service.imageSrc}
                       alt={service.title}
-                      layout="fill"
+                      width={340}
+                      height={210}
                       objectFit="contain"
-                      className="rounded-md"
+                      className="rounded-md w-full h-full"
                     />
                   </div>
                 </div>

@@ -99,7 +99,7 @@ const PortfolioUI: React.FC = () => {
                     {item.services.map((service) => (
                       <button
                         key={service}
-                        className="bg-[#000] w-fit px-4 py-2 border border-[#403E44] rounded-full text-xs md:text-sm hover:bg-white/20 transition inline-block"
+                        className="bg-[#000] font-sans w-fit px-4 py-2 border border-[#403E44] rounded-full text-xs md:text-sm hover:bg-white/20 transition inline-block"
                       >
                         {service}
                       </button>
@@ -124,7 +124,7 @@ const PortfolioUI: React.FC = () => {
                         <path d="M12 5l7 7-7 7" />
                       </svg>
                     </div>
-                    <span className="text-white pr-4 text-base">
+                    <span className="text-white pr-4  font-sans text-base">
                       View our Work
                     </span>
                   </button>

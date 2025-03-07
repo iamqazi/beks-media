@@ -157,10 +157,12 @@ const TeamSlider: React.FC = () => {
                 max-sm:p-2 max-sm:text-sm 
                 max-md:p-3"
                 >
-                  <h3 className="text-white text-[32px] font-bold">
+                  <h3 className="text-white text-[24px] font-bold">
                     {member.name}
                   </h3>
-                  <p className="text-gray-300 text-[24px]">{member.role}</p>
+                  <p className="text-gray-300 font-sans text-[18px]">
+                    {member.role}
+                  </p>
                 </div>
               </SwiperSlide>
             ))}
