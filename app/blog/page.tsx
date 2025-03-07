@@ -106,11 +106,11 @@ export default function ArticlePage() {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-lg">JACKSON PETER</span>
+              <span className="text-lg font-sans">JACKSON PETER</span>
             </div>
             <div className="flex items-center gap-1 text-gray-400">
               <Calendar className="w-5 h-5" />
-              <span>September 13, 2024</span>
+              <span className="font-sans">September 13, 2024</span>
             </div>
           </div>
 
@@ -129,7 +129,7 @@ export default function ArticlePage() {
             {/* Article Content */}
             <div className="flex flex-col justify-center items-center">
               {" "}
-              <p className="mt-[60px] text-[28px]  text-white font-sans max-w-[1280px]">
+              <p className="mt-[60px] text-[28px]  text-white font-serif max-w-[1280px]">
                 Lorem ipsum dolor sit amet consectetur. Lectus pellentesque
                 lacinia sapien diam tincidunt risus.. Et enim mattis varius diam
                 augue quis ipsum diam.. Feugiat nunc enim malesuada ipsum
@@ -147,7 +147,9 @@ export default function ArticlePage() {
                 height={1}
                 className="h-[2px]"
               />
-              <span className="uppercase text-[24px] ">Lorem ipsum</span>
+              <span className="uppercase font-sans text-[24px] ">
+                Lorem ipsum
+              </span>
             </div>
 
             {/* Research Sections */}
@@ -180,7 +182,7 @@ export default function ArticlePage() {
                     velit felis condimentum felis neque.. Cras amet consectetur
                     nulla varius. Odio neque blandit sed.
                   </p>
-                  <ul className="list-disc list-inside mt-2 text-[16px] md:text-[20px] text-[#F0F0F0] space-y-1">
+                  <ul className="list-disc font-sans list-inside mt-2 text-[16px] md:text-[20px] text-[#F0F0F0] space-y-1">
                     <li>Lorem ipsum dolor sit amet consectetur.</li>
                     <li>Ut vel pulvinar.</li>
                     <li>Tristique vulputate maecenas nisl id.</li>

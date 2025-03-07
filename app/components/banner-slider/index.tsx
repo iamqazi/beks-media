@@ -35,7 +35,7 @@ const BannerAnimation = () => {
       <h2 className="font-[800] md:text-[48px] leading-[100%] mt-10 text-white tracking-[0%] text-center font-akira  text-[36px]">
         Our Strategic Partners
       </h2>
-      <div className="mt-[87px] border flex flex-col items-center border-[#403E44] sec-5-trigger mx-auto w-full overflow-hidden">
+      <div className="mt-[87px] border-y border-[#403E44] flex flex-col items-center sec-5-trigger mx-auto w-full overflow-hidden">
         <div className="flex flex-col gap-8 md:gap-16 w-full">
           <div className="sec-5-move-anim relative top-[200px] flex flex-col gap-11 opacity-0 md:gap-16">
             <div className="h-[11.125rem] py-6 flex justify-center w-full overflow-hidden">

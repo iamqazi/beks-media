@@ -31,7 +31,7 @@ const BeksMediaNumbers: React.FC = () => {
                   src="/image44.png"
                   alt="Mobile App Designs"
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                   className="rounded"
                 />
               </div>
