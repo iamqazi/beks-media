@@ -81,7 +81,7 @@ const ArticleHero: NextPage = () => {
             </h1>
 
             {/* Paragraph text */}
-            <p className="text-white font-sans text-base sm:text-lg md:text-[24px] mt-4 max-w-lg sm:max-w-2xl md:max-w-4xl">
+            <p className="text-white font-sans text-base sm:text-lg md:text-[24px] font-[300] mt-4 max-w-lg sm:max-w-2xl md:max-w-4xl">
               A little sample of what we&apos;ve done
             </p>
 

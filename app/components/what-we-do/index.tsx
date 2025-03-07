@@ -66,7 +66,7 @@ const WhatWeDoSection: React.FC = () => {
   return (
     <div className="bg-gradient-to-b my-20 from-[#061226] to-[#030307] text-white py-16 px-4 min-h-screen md:px-8 lg:px-16 rounded-tl-[30px] rounded-tr-[30px]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center tracking-wider">
+        <h2 className="text-4xl md:text-[48px] font-[800] mb-16 text-center tracking-wider">
           WHAT WE DO
         </h2>
 
@@ -83,7 +83,7 @@ const WhatWeDoSection: React.FC = () => {
             >
               <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center">
                 {/* Responsive Text Size */}
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-wider mb-2 md:mb-0 md:max-w-[50%]">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[34px] font-[800] leading-[40px] tracking-wider mb-2 md:mb-0 md:max-w-[50%]">
                   {service.title}
                 </h3>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl text-right font-sans text-gray-400 md:max-w-[50%]">
@@ -94,7 +94,7 @@ const WhatWeDoSection: React.FC = () => {
               {/* Lowered Image Placement on Hover */}
               {hoveredImage === service.id && (
                 <div className="absolute inset-0 flex items-center justify-end z-10 pointer-events-none">
-                  <div className="relative w-32 h-24 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-[300px] lg:h-[270px] right-0 md:right-1/3 top-2/3 transform -translate-y-[40%] -rotate-12 transition-transform duration-300">
+                  <div className="relative w-42 h-44  md:w-48 md:h-32 lg:w-[300px] lg:h-[270px] right-0 md:right-1/3 top-2/3 transform -translate-y-[40%] -rotate-12 transition-transform duration-300">
                     <Image
                       src={service.imageSrc}
                       alt={service.title}

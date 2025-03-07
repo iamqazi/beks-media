@@ -101,27 +101,32 @@ const HeroSection: NextPage = () => {
         </main>
 
         {/* "SEE OUR WORK" text */}
-        <div className="absolute -right-16  top-1/2 transform -translate-y-1/2 hidden md:block">
-          <div className="text-[#DC2F39] text-[24px] font-bold transform rotate-90 flex items-center">
-            SEE OUR WORK
-            <Image
-              src={"/Vector.png"}
-              height={27}
-              width={35}
-              alt="image"
-              className="ml-2 -rotate-90 "
-            />
+        <Link href="/portfolio">
+          <div className="absolute -right-16 top-1/2 transform -translate-y-1/2 hidden md:block cursor-pointer">
+            <div className=" flex items-center transform -rotate-90 tracking-wider">
+              <Image
+                src={"/Vector.png"}
+                height={27}
+                width={35}
+                alt="icon"
+                className="mr-3 rotate-90"
+              />
+              <span className="text-[#DC2F39] text-[24px] font-[800] ">
+                {" "}
+                SEE OUR WORK
+              </span>
+            </div>
           </div>
-        </div>
+        </Link>
 
         <div className="flex flex-col lg:flex-row justify-between items-center mx-4  md:mx-[97px] text-center md:text-left">
           <div className="flex flex-col mb-6 md:mb-0">
-            <div className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-8">
+            <div className="text-white leading-[44px] text-[28px] md:text-[40px] font-[800] mb-4 ">
               YOUR INNOVATION
               <br />
               DESERVES RECOGNITION
             </div>
-            <p className="text-white text-base font-sans sm:text-lg md:text-xl mb-6 md:mb-16 max-w-2xl">
+            <p className="text-white text-base font-sans text-[18px] md:text-[24px] mb-6 md:mb-16 max-w-2xl">
               We transform Web 3.0 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
