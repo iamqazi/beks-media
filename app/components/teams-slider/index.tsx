@@ -79,7 +79,9 @@ const TeamSlider: React.FC = () => {
               <h3 className="text-white whitespace-normal text-[25px] font-bold">
                 {member.name}
               </h3>
-              <p className="text-gray-300 text-[24px]">{member.role}</p>
+              <p className="text-gray-300 font-sans text-[24px]">
+                {member.role}
+              </p>
             </div>
           </div>
         ))}

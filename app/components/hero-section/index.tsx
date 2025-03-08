@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useState } from "react";
 import ButtonImage from "../shared ui/button";
 import Link from "next/link";
-import AnimatedBackground from "./dots";
 
 const HeroSection: NextPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +22,7 @@ const HeroSection: NextPage = () => {
 
   return (
     <div className="relative bg-black min-h-screen overflow-hidden">
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
@@ -40,8 +39,8 @@ const HeroSection: NextPage = () => {
         <Image
           src="/horse.png"
           alt="Unicorn silhouette"
-          width={300}
-          height={224}
+          width={200}
+          height={124}
           objectFit="contain"
         />
       </div>
@@ -96,7 +95,7 @@ const HeroSection: NextPage = () => {
             width={100}
             height={100}
             alt="img"
-            className="w-[1000px] h-[500px] "
+            className="w-[1200px] h-[650px] "
           />
         </main>
 
