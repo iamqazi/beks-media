@@ -5,16 +5,27 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#101010] relative text-white w-full">
+    <footer
+      className="bg-[#101010] relative text-white w-full"
+      style={{
+        backgroundImage: "url('/bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="bg-black bg-opacity-30 w-full h-full absolute top-0 left-0 z-0"></div>
+
       <Image
         src="/footerblur.png"
         alt="Beks Media Logo"
         width={550}
         height={50}
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-[550px]"
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-[550px] z-10"
       />
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 relative z-10">
+        {/* Rest of your footer content */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           {/* Logo and Description */}
           <div className="mb-8 md:mb-0 max-w-md">
@@ -115,17 +126,46 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center py-10">
-          <h2 className="text-5xl md:text-6xl lg:text-[120px] font-bold mb-4 tracking-wide">
-            JOIN US TODAY
-          </h2>
+        {/* Copyright */}
+      </div>
+      <div className="container mx-auto px-4 mb-[80px] flex flex-col md:flex-row items-center justify-center gap-4 relative z-10">
+        {/* Statue with blue bar */}
+        <div className="relative h-64 md:h-[300px] w-40 md:w-[120px]">
+          <div className="relative h-full w-full">
+            <Image
+              src="/footer-img.png"
+              alt="Classical statue"
+              fill
+              style={{ objectFit: "contain" }}
+              priority
+            />
+            {/* Blue bar across eyes */}
+            <div className="absolute top-1/4 w-full h-8 md:h-12 bg-blue-700 z-10"></div>
+          </div>
         </div>
 
-        {/* Copyright */}
-        <div className="text-center pt-6 pb-2 font-sans text-sm text-gray-400">
-          © Copyright 2025 Beks Media
+        {/* Text section */}
+        <div className=" text-[32px] md:text-[50px] font-[800] tracking-tighter ml-0 md:ml-4">
+          <div className="flex  ">
+            <span className="text-[#ACACAC]">B </span>
+            <span className="text-[#47454C] ml-3"> RANDING</span>
+          </div>
+          <div className="flex">
+            <span className="text-[#ACACAC]">E</span>
+            <span className="text-[#47454C] ml-3">VERY</span>
+          </div>
+          <div className="flex">
+            <span className="text-[#ACACAC]">K</span>
+            <span className="text-[#47454C] ml-3">NOWN</span>
+          </div>
+          <div className="flex">
+            <span className="text-[#ACACAC]">S</span>
+            <span className="text-[#47454C] ml-3">TORY</span>
+          </div>
         </div>
+      </div>
+      <div className="text-center pt-6 pb-2 font-sans text-sm text-gray-400 relative z-10">
+        © Copyright 2025 Beks Media
       </div>
     </footer>
   );

@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
-import ButtonImage from "../shared ui/button";
 import Link from "next/link";
 
 const HeroSection: NextPage = () => {
@@ -131,7 +130,13 @@ const HeroSection: NextPage = () => {
             </p>
           </div>
           <div className="mb-8">
-            <ButtonImage text="Work With Us" onClick={handleClick} />
+            <Image
+              onClick={handleClick}
+              src={"/newbtn.png"}
+              height={72}
+              width={300}
+              alt="img"
+            />
           </div>
         </div>
       </div>
