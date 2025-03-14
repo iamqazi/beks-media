@@ -2,12 +2,11 @@
 const nextConfig = {
   images: {
     domains: ["localhost"], // Add localhost for development
-    // Or use remotePatterns for more control:
     remotePatterns: [
       {
         protocol: "http",
         hostname: "localhost",
-        port: "1337", // Strapi default port
+        port: "1337",
         pathname: "/uploads/**",
       },
     ],

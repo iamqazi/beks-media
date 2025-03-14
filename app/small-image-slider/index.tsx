@@ -6,15 +6,13 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./slider.css"; // Custom CSS for styling
+import "./slider.css";
 
-// Define a type for the image prop (optional but recommended for TypeScript or better code clarity)
 type BlogImage = {
   src: string;
   alt: string;
 };
 
-// Props interface for the component
 interface BlogCardsProps {
   images: BlogImage[];
 }
@@ -25,15 +23,14 @@ const BlogCardsSlider = ({ images }: BlogCardsProps) => {
       <div className="max-w-7xl mx-auto px-5">
         <Swiper
           modules={[Navigation, Pagination]}
-          slidesPerView={1} // Show 3 slides at a time
-          spaceBetween={20} // Add spacing between slides
+          slidesPerView={1}
+          spaceBetween={20}
           pagination={{ clickable: true }} // Enable clickable pagination dots
           loop={true} // Enable infinite looping
           breakpoints={{
-            // Responsive adjustments
-            640: { slidesPerView: 1, spaceBetween: 10 }, // 1 slide on small screens
-            1024: { slidesPerView: 1, spaceBetween: 15 }, // 2 slides on medium screens
-            1280: { slidesPerView: 1, spaceBetween: 20 }, // 3 slides on large screens
+            640: { slidesPerView: 1, spaceBetween: 10 },
+            1024: { slidesPerView: 1, spaceBetween: 15 },
+            1280: { slidesPerView: 1, spaceBetween: 20 },
           }}
           className=" custom-pagination"
         >
