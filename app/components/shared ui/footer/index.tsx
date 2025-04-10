@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       <div className="bg-black bg-opacity-30 w-full h-full absolute top-0 left-0 z-0"></div>
 
       <Image
-        src="/footerblur.png"
+        src={"/footerblur.png"}
         alt="Beks Media Logo"
         width={550}
         height={50}
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           <div className="mb-8 md:mb-0 max-w-md">
             <div className="mb-4">
               <Image
-                src="/logo.png"
+                src={"/logo.png"}
                 alt="Beks Media Logo"
                 width={150}
                 height={50}
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                 className="text-white hover:text-blue-400 transition-colors"
               >
                 <Image
-                  src="/facebook.png"
+                  src={"/facebook.png"}
                   alt="Facebook"
                   width={34}
                   height={34}

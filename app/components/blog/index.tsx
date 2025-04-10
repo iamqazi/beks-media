@@ -26,6 +26,15 @@ interface Paragraph {
 interface Blogs {
   id: number;
   Author_name: string;
+  // Changed thumbnail from string to object matching your usage
+  thumbnail: {
+    url: string;
+    formats?: {
+      thumbnail?: {
+        url: string;
+      };
+    };
+  }[];
   Author_Avatar: {
     url: string;
     formats?: {
@@ -86,9 +95,14 @@ const BlogCards: React.FC = () => {
 
   useEffect(() => {
     const getEvents = async () => {
-      const data = await fetchEvents();
-      if (data) {
-        setBlogs(data.data);
+      try {
+        const data = await fetchEvents();
+        if (data) {
+          setBlogs(data.data);
+          console.log(data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching events:", error);
       }
     };
     getEvents();
@@ -165,7 +179,7 @@ const BlogCards: React.FC = () => {
           </p>
         </div>
       )}
-      {blogs && (
+      {blogs ? (
         <div className="flex justify-center items-center mt-[90px] w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1200px]">
             {blogs.map((post) => (
@@ -175,8 +189,8 @@ const BlogCards: React.FC = () => {
                     width={200}
                     height={200}
                     src={
-                      `${baseUrl}${post.Small_thumbnail?.[0]?.formats?.thumbnail?.url}` ||
-                      `${baseUrl}${post.Small_thumbnail?.[0]?.url}` ||
+                      `${baseUrl}${post.thumbnail?.[0]?.formats?.thumbnail?.url}` ||
+                      `${baseUrl}${post.thumbnail?.[0]?.url}` ||
                       "/default-small.png"
                     }
                     alt={post.Blog_title}
@@ -186,7 +200,11 @@ const BlogCards: React.FC = () => {
                 <div className="py-6 px-4">
                   <div className="flex items-center mb-4">
                     <Image
-                      src="/profile.png"
+                      src={
+                        `${baseUrl}${post.Author_Avatar?.[0]?.formats?.thumbnail?.url}` ||
+                        `${baseUrl}${post.Author_Avatar?.[0]?.url}` ||
+                        "/profile.png"
+                      }
                       height={50}
                       width={50}
                       alt="Author"
@@ -212,7 +230,7 @@ const BlogCards: React.FC = () => {
                       <button className="bg-[#15131A] w-[187px] h-[50px] md:h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
                         <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">
                           <svg
-                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/999/svg"
                             width="16"
                             height="16"
                             viewBox="0 0 24 24"
@@ -250,6 +268,8 @@ const BlogCards: React.FC = () => {
             ))}
           </div>
         </div>
+      ) : (
+        <div className="text-white">Loading blogs...</div>
       )}
     </div>
   );

@@ -22,22 +22,25 @@ const BusinessSection: React.FC = () => {
   };
 
   useEffect(() => {
+    // Store the current video element in a variable to avoid ref changing during cleanup
+    const currentVideo = videoRef.current;
+
     // Play/pause video based on visibility
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (videoRef.current) {
+        if (currentVideo) {
           if (entry.isIntersecting) {
-            videoRef.current.play();
+            currentVideo.play();
           } else {
-            videoRef.current.pause();
+            currentVideo.pause();
           }
         }
       },
       { threshold: 0.5 } // Video plays when at least 50% visible
     );
 
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
+    if (currentVideo) {
+      observer.observe(currentVideo);
     }
 
     // Set up resize listener to update container height
@@ -47,8 +50,8 @@ const BusinessSection: React.FC = () => {
     updateDimensions();
 
     return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
+      if (currentVideo) {
+        observer.unobserve(currentVideo);
       }
       window.removeEventListener("resize", updateDimensions);
     };

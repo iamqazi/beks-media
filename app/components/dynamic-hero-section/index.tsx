@@ -48,7 +48,7 @@ const HeroSection: NextPage = () => {
         {/* Header */}
         <header className="p-4 md:p-8">
           <div className="flex justify-between items-center">
-            <Image src={"/logo.png"} height={50} width={100} alt="img" />
+            <Image src="/logo.png" height={50} width={100} alt="img" />
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white focus:outline-none"

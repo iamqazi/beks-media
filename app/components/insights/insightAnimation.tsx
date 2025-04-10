@@ -6,8 +6,8 @@ const FutureAnimation: React.FC = () => {
   const requestRef = useRef<number>(0);
   const centerX = 600;
   const centerY = 800;
-  const radii = [300, 380, 460, 540, 620, 700]; // Circular paths
-  const speed = 0.002; // Slower uniform speed for all paths
+  const radii = [300, 380, 460, 540, 620, 700];
+  const speed = 0.002;
 
   useEffect(() => {
     const animate = () => {
@@ -15,19 +15,28 @@ const FutureAnimation: React.FC = () => {
       requestRef.current = requestAnimationFrame(animate);
     };
     requestRef.current = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(requestRef.current!);
+    return () => {
+      if (requestRef.current) {
+        cancelAnimationFrame(requestRef.current);
+      }
+    };
   }, []);
 
+  const calculatePosition = (radius: number, offset: number) => {
+    const x = Number((centerX + radius * Math.cos(angle + offset)).toFixed(4));
+    const y = Number((centerY + radius * Math.sin(angle + offset)).toFixed(4));
+    return { x, y };
+  };
+
   return (
-    <div className="absolute inset-0  overflow-hidden pointer-events-none ">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
       <svg
         width="100%"
         height="100%"
         viewBox="0 0 1200 1600"
         preserveAspectRatio="xMidYMin slice"
-        className="absolute sm:top-[-180px] top-[-80px] left-0 w-full h-full  opacity-30"
+        className="absolute sm:top-[-180px] top-[-80px] left-0 w-full h-full opacity-30"
       >
-        {/* Radial Gradient Background */}
         <defs>
           <radialGradient
             id="bg-gradient"
@@ -43,7 +52,6 @@ const FutureAnimation: React.FC = () => {
         </defs>
         <rect x="0" y="0" width="100%" height="100%" fill="url(#bg-gradient)" />
 
-        {/* Circles (Paths) */}
         {radii.map((radius, index) => (
           <circle
             key={index}
@@ -60,25 +68,13 @@ const FutureAnimation: React.FC = () => {
           />
         ))}
 
-        {/* Dots Moving Along Paths */}
-        {radii.map((radius, index) => {
-          return [0, 2, 4].map((dotOffset) => {
-            const x =
-              centerX +
-              radius *
-                Math.cos(
-                  angle + index * (Math.PI / 3) + dotOffset * (Math.PI / 3)
-                );
-            const y =
-              centerY +
-              radius *
-                Math.sin(
-                  angle + index * (Math.PI / 3) + dotOffset * (Math.PI / 3)
-                );
-            const isBorderedDot = dotOffset !== 0; // Two bordered, one non-bordered dot
+        {radii.map((radius, index) =>
+          [0, 2, 4].map((dotOffset) => {
+            const offset = index * (Math.PI / 3) + dotOffset * (Math.PI / 3);
+            const { x, y } = calculatePosition(radius, offset);
+            const isBorderedDot = dotOffset !== 0;
             return isBorderedDot ? (
               <g key={`${index}-${dotOffset}`}>
-                {/* Outer Border Circle */}
                 <circle
                   cx={x}
                   cy={y}
@@ -87,7 +83,6 @@ const FutureAnimation: React.FC = () => {
                   stroke="#c9cbcf"
                   strokeWidth="1.5"
                 />
-                {/* Inner Dot */}
                 <circle cx={x} cy={y} r="3" fill="#c9cbcf" />
               </g>
             ) : (
@@ -99,8 +94,8 @@ const FutureAnimation: React.FC = () => {
                 fill="#c9cbcf"
               />
             );
-          });
-        })}
+          })
+        )}
       </svg>
     </div>
   );

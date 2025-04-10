@@ -25,7 +25,7 @@ const HeroSection: NextPage = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/bg.png"
+          src={"/bg.png"}
           alt="Space background"
           layout="fill"
           objectFit="cover"
@@ -36,7 +36,7 @@ const HeroSection: NextPage = () => {
       {/* Unicorn silhouette on the bottom left */}
       <div className="absolute bottom-[420px] left-2 z-10 w-[300px] h-[224px]">
         <Image
-          src="/horse.png"
+          src={"/horse.png"}
           alt="Unicorn silhouette"
           width={200}
           height={124}
@@ -45,7 +45,7 @@ const HeroSection: NextPage = () => {
       </div>
       <div className="absolute top-0 left-0 z-10 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[480px] md:h-[480px]">
         <Image
-          src="/blur.png"
+          src={"/blur.png"}
           alt="Blur effect"
           width={500}
           height={500}
@@ -59,7 +59,7 @@ const HeroSection: NextPage = () => {
         <header className="p-4 md:p-8 flex justify-between items-center">
           <div className="text-white font-bold text-lg sm:text-xl md:text-2xl">
             <Image
-              src="/logo.png"
+              src={"/logo.png"}
               alt="Blur effect"
               width={122}
               height={50}
