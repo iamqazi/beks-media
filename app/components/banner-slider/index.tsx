@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
 const BannerAnimation = () => {
@@ -23,11 +24,52 @@ const BannerAnimation = () => {
   }, []);
 
   const technologies = [
-    { title: "React", image: "/1.png" },
-    { title: "Tailwind CSS", image: "/2.png" },
-    { title: "GraphQL", image: "/3.png" },
-    { title: "GraphQL", image: "/4.png" },
-    { title: "GraphQL", image: "/5.png" },
+    {
+      title: "React",
+      image: "/partners_1.svg",
+      link: "https:www.astorvia.com",
+    },
+    {
+      title: "Tailwind CSS",
+      image: "/partners_2.svg",
+      link: "//www.senate-europe.org/",
+    },
+    {
+      title: "GraphQL",
+      image: "/partner11.svg",
+      link: "//www.conf3rence.com/",
+    },
+    { title: "GraphQL", image: "/partners_4.svg", link: "https://starzz.eu/" },
+    {
+      title: "GraphQL",
+      image: "/partners_5.svg",
+      link: "https://www.finsuiteconsulting.co/",
+    },
+    {
+      title: "GraphQL",
+      image: "/partners_6.svg",
+      link: "https://lunadesigner.net/",
+    },
+    {
+      title: "GraphQL",
+      image: "/partners_8.svg",
+      link: "https://womeninblockchaintalks.com/",
+    },
+    {
+      title: "GraphQL",
+      image: "/partners_9.svg",
+      link: "https://www.thecryptoupdates.com/",
+    },
+    {
+      title: "GraphQL",
+      image: "/partners_10.svg",
+      link: "https://clementius.com/",
+    },
+    {
+      title: "GraphQL",
+      image: "/startup.svg",
+      link: "https//www.urstartupsucks.com/",
+    },
   ];
 
   return (
@@ -45,13 +87,15 @@ const BannerAnimation = () => {
                     key={index}
                     className="mx-4 flex flex-col items-center gap-1 md:mx-8"
                   >
-                    <Image
-                      src={tech.image}
-                      alt={tech.title}
-                      className="w-auto h-[40px] max-w-[150px]"
-                      width={100}
-                      height={40}
-                    />
+                    <Link href={tech.link} className="cursor-pointer">
+                      <Image
+                        src={tech.image}
+                        alt={tech.title}
+                        className="w-auto h-[40px] max-w-[150px]"
+                        width={100}
+                        height={40}
+                      />
+                    </Link>
                   </div>
                 ))}
               </Marquee>

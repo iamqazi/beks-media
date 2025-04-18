@@ -8,9 +8,7 @@ import Link from "next/link";
 
 const HeroSection: NextPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const handleClick = () => {
-    console.log("Button clicked!");
-  };
+  const handleClick = () => {};
   const pathname = usePathname();
 
   // Fix: Use string instead of 'any' for type safety
@@ -129,7 +127,10 @@ const HeroSection: NextPage = () => {
               storytelling and marketing.
             </p>
           </div>
-          <div className="mb-8">
+          <Link
+            href="https://calendly.com/beksmedia/beks-media-meeting?month=2025-04"
+            className="mb-8 cursor-pointer"
+          >
             <Image
               onClick={handleClick}
               src={"/newbtn.png"}
@@ -137,7 +138,7 @@ const HeroSection: NextPage = () => {
               width={300}
               alt="img"
             />
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -155,7 +156,7 @@ const HeroSection: NextPage = () => {
           {/* Close Button */}
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-4 right-4 text-white z-10 focus:outline-none"
+            className="absolute top-[30px] right-[80px] text-white z-10 focus:outline-none"
           >
             <svg
               className="w-6 h-6 sm:w-8 sm:h-8"
@@ -174,7 +175,7 @@ const HeroSection: NextPage = () => {
           </button>
 
           {/* Logo */}
-          <div className="absolute top-6 left-6 z-10">
+          <div className="absolute top-[30px] left-[80px] z-10">
             <Image
               src="/logo.png"
               alt="Beks Media Logo"

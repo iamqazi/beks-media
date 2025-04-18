@@ -74,7 +74,7 @@ interface Blogs {
 const BlogCards: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [blogs, setBlogs] = useState<Blogs[] | null>(null);
-  const baseUrl = "http://localhost:1337";
+  const baseUrl = "https://api.beksmedia.com";
   const pathname = usePathname();
   const isActive = (path: string) =>
     pathname === path
@@ -125,7 +125,7 @@ const BlogCards: React.FC = () => {
           />
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-4 right-4 text-white z-10 focus:outline-none"
+            className="absolute top-[30px] right-[80px] text-white z-10 focus:outline-none"
           >
             <svg
               className="w-6 h-6 sm:w-8 sm:h-8"
@@ -142,7 +142,7 @@ const BlogCards: React.FC = () => {
               />
             </svg>
           </button>
-          <div className="absolute top-6 left-6 z-10">
+          <div className="absolute top-[30px] left-[80px] z-10">
             <Image
               src="/logo.png"
               alt="Beks Media Logo"

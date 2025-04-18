@@ -1,7 +1,6 @@
 export const fetchEvents = async () => {
   try {
-    const res = await fetch("http://localhost:1337/api/blogs?populate=*");
-
+    const res = await fetch("https://api.beksmedia.com/api/blogs?populate=*");
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }

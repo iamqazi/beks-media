@@ -13,7 +13,7 @@ export default function Insight() {
         {/* Background Image */}
 
         {/* Content */}
-        <div className="relative border border-white/60 h-[260px] rounded-[8px] px-4 sm:px-8 md:px-12 flex flex-col lg:flex-row items-center w-full max-w-[1280px]">
+        <div className="relative border border-white/60 h-full md:h-[260px] rounded-[8px] px-4 sm:px-8 md:px-12 flex flex-col lg:flex-row items-center w-full max-w-[1280px]">
           {/* Left Content - Text and Form */}
           <div className="w-full  py-6 md:py-12 flex flex-col items-center ">
             <h1 className="text-[24px] max-w-[900px] md:-[32px] font-[800] leading-[30px] text-center  mb-[24px]">

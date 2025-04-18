@@ -1,17 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import ButtonImage from "../shared ui/button";
+import Link from "next/link";
 
 const BeksMediaNumbers: React.FC = () => {
-  const handleClick = () => {
-    console.log("Button clicked!");
-  };
+  const handleClick = () => {};
   return (
     <div className="flex justify-center items-center min-h-screen bg-black">
       <div className="bg-black w-full py-16">
         <div className="mx-auto px-4">
           {/* Title */}
-          <h2 className="text-white text-5xl font-bold text-center mb-16 tracking-wider">
+          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16 tracking-wider">
             BEKS MEDIA IN NUMBERS
           </h2>
 
@@ -124,13 +123,13 @@ const BeksMediaNumbers: React.FC = () => {
                       <br className="hidden font-sans md:block" />
                       in multiple languages
                     </p>
-                    <div className="mb-8">
+                    <Link href="/portfolio" className="cursor-pointer mb-8">
                       <ButtonImage
                         icon="/new.png"
                         text="See Our Work"
                         onClick={handleClick}
                       />
-                    </div>
+                    </Link>
                   </div>
 
                   <div className="relative md:top-0 mt-10 md:mt-0 z-0 md:z-10">
