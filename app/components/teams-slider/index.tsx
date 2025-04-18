@@ -79,7 +79,7 @@ const TeamSlider: React.FC = () => {
               <h3 className="text-white whitespace-normal text-[25px] font-bold">
                 {member.name}
               </h3>
-              <p className="text-gray-300 font-sans text-[24px]">
+              <p className="text-gray-300 font-inter text-[24px]">
                 {member.role}
               </p>
             </div>
@@ -162,7 +162,7 @@ const TeamSlider: React.FC = () => {
                   <h3 className="text-white text-[24px] font-bold">
                     {member.name}
                   </h3>
-                  <p className="text-gray-300 font-sans text-[18px]">
+                  <p className="text-gray-300 font-inter text-[18px]">
                     {member.role}
                   </p>
                 </div>

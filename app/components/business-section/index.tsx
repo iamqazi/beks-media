@@ -65,7 +65,7 @@ const BusinessSection: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden"
+      className="relative w-full  overflow-hidden"
       style={{ height: videoHeight ? `${videoHeight}px` : "auto" }}
     >
       {/* Background Video */}
@@ -76,7 +76,7 @@ const BusinessSection: React.FC = () => {
           playsInline
           muted={isMuted}
           onLoadedMetadata={handleVideoLoad}
-          className="w-full h-full sm:object-contain lg:object-cover"
+          className="w-full  sm:object-contain lg:object-cover"
         >
           <source src="/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.

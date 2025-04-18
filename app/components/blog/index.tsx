@@ -78,7 +78,7 @@ const BlogCards: React.FC = () => {
   const pathname = usePathname();
   const isActive = (path: string) =>
     pathname === path
-      ? "text-red-600"
+      ? "text-[#DC2F39]"
       : "hover:text-gray-300 transition duration-300";
 
   const formatDate = (dateString?: string): string => {
@@ -125,7 +125,7 @@ const BlogCards: React.FC = () => {
           />
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-[30px] right-[80px] text-white z-10 focus:outline-none"
+            className="absolute top-[30px] right-[40px] md:right-[80px] text-white z-10 focus:outline-none"
           >
             <svg
               className="w-6 h-6 sm:w-8 sm:h-8"
@@ -151,7 +151,7 @@ const BlogCards: React.FC = () => {
             />
           </div>
           <nav className="z-10">
-            <ul className="text-white text-3xl sm:text-4xl font-bold space-y-6">
+            <ul className="text-white text-[32px] md:text-[60px]  font-bold space-y-6">
               <li>
                 <Link href="/" className={isActive("/")}>
                   BEKS MEDIA
@@ -211,18 +211,18 @@ const BlogCards: React.FC = () => {
                       className="rounded-full mr-3 w-10 h-10"
                     />
                     <div>
-                      <p className="text-white text-[20px] font-sans font-semibold">
+                      <p className="text-white text-[20px] font-inter font-semibold">
                         {post.Author_name}
                       </p>
-                      <p className="text-[#ADADAD] font-sans text-[16px]">
+                      <p className="text-[#ADADAD] font-inter text-[16px]">
                         {formatDate(post?.publishedAt)}
                       </p>
                     </div>
                   </div>
-                  <h2 className="text-[28px] text-white md:text-[32px] font-[700] font-sans mb-4">
+                  <h2 className="text-[28px] text-white md:text-[32px] font-[700] font-inter mb-4">
                     {post.Blog_title}
                   </h2>
-                  <p className="text-[#ADADAD] font-sans mb-6">
+                  <p className="text-[#ADADAD] font-inter mb-6">
                     {post.Blog_Description}
                   </p>
                   <div className="flex space-x-4">
@@ -244,7 +244,7 @@ const BlogCards: React.FC = () => {
                             <path d="M12 5l7 7-7 7" />
                           </svg>
                         </div>
-                        <span className="text-white font-sans text-[14px] md:text-[18px] pr-4 text-base">
+                        <span className="text-white font-inter text-[14px] md:text-[18px] pr-4 text-base">
                           Read More
                         </span>
                       </button>
@@ -258,7 +258,7 @@ const BlogCards: React.FC = () => {
                           alt="Share"
                         />
                       </div>
-                      <span className="text-white font-sans pr-4 text-[14px] md:text-[18px] text-base">
+                      <span className="text-white font-inter pr-4 text-[14px] md:text-[18px] text-base">
                         Share Post
                       </span>
                     </button>

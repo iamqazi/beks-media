@@ -74,7 +74,7 @@ const BannerAnimation = () => {
 
   return (
     <>
-      <h2 className="font-[800] md:text-[48px] leading-[100%] mt-10 text-white tracking-[0%] text-center font-akira  text-[36px]">
+      <h2 className="font-[800] md:text-[48px] leading-[100%] mt-10 text-white tracking-[0%] max-w-[950px] mx-auto  text-center font-akira  text-[30px]">
         Our Strategic Partners
       </h2>
       <div className="mt-[87px] border-y border-[#403E44] flex flex-col items-center sec-5-trigger mx-auto w-full overflow-hidden">

@@ -144,7 +144,7 @@ const PortfolioUI: React.FC = () => {
       {portfolioData.map((item, index) => (
         <div key={item.id} className="relative">
           {/* Large Background Number */}
-          <div className="absolute font-sans font-[900] top-10 left-1/2 text-[60px] md:text-[80px] lg:text-[120px] text-[#403E44] z-0">
+          <div className="absolute font-inter font-[900] top-10 left-1/2 text-[60px] md:text-[80px] lg:text-[120px] text-[#403E44] z-0">
             {`0${index + 1}`}
           </div>
 
@@ -161,7 +161,7 @@ const PortfolioUI: React.FC = () => {
                 <h2 className="text-2xl md:text-[38px] font-bold mb-4">
                   {item.title}
                 </h2>
-                <p className="text-gray-300 font-sans mb-6 text-[16px] md:text-lg">
+                <p className="text-gray-300 font-inter mb-6 text-[16px] md:text-lg">
                   {item.description}
                 </p>
 
@@ -171,7 +171,7 @@ const PortfolioUI: React.FC = () => {
                     {item.services.map((service) => (
                       <button
                         key={service}
-                        className="bg-[#000] font-sans w-fit px-4 py-2 border border-[#403E44] rounded-full text-xs md:text-sm hover:bg-white/20 transition inline-block"
+                        className="bg-[#000] font-inter w-fit px-4 py-2 border border-[#403E44] rounded-full text-xs md:text-sm hover:bg-white/20 transition inline-block"
                       >
                         {service}
                       </button>
@@ -196,7 +196,7 @@ const PortfolioUI: React.FC = () => {
                         <path d="M12 5l7 7-7 7" />
                       </svg>
                     </div>
-                    <span className="text-white pr-4 font-sans text-base">
+                    <span className="text-white pr-4 font-inter text-base">
                       View our Work
                     </span>
                   </button>

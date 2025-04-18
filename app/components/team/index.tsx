@@ -97,7 +97,7 @@ const TeamSection: React.FC = () => {
               <p className="text-gray-400 font-akira font-[800] uppercase tracking-wider">
                 {member.title}
               </p>
-              <p className="text-[18px] leading-[28px] font-[300] md:text-[24px] text-justify font-sans ">
+              <p className="text-[18px] leading-[28px] font-[300] md:text-[24px] text-justify font-inter ">
                 {member.bio}
               </p>
               {/* Social Links */}

@@ -14,7 +14,7 @@ const HeroSection: NextPage = () => {
   // Fix: Use string instead of 'any' for type safety
   const isActive = (path: string) =>
     pathname === path
-      ? "text-red-600"
+      ? "text-[#DC2F39]"
       : "hover:text-gray-300 transition duration-300";
 
   return (
@@ -92,7 +92,7 @@ const HeroSection: NextPage = () => {
             width={100}
             height={100}
             alt="img"
-            className="w-[1200px] h-[650px] "
+            className="w-[1200px] lg:h-[650px] "
           />
         </main>
 
@@ -120,10 +120,10 @@ const HeroSection: NextPage = () => {
             <div className="text-white leading-[44px] text-[28px] md:text-[40px] font-[800] mb-4 ">
               YOUR INNOVATION
               <br />
-              DESERVES RECOGNITION
+              DESERVES RECOGNITION.
             </div>
-            <p className="text-white text-base font-sans text-[18px] md:text-[24px] mb-6 md:mb-16 max-w-2xl">
-              We transform Web 3.0 startups into iconic brands through strategic
+            <p className="text-white text-base font-inter text-[18px] md:text-[24px] mb-6 lg:mb-16 max-w-2xl">
+              We transform Web 3startups into iconic brands through strategic
               storytelling and marketing.
             </p>
           </div>
@@ -156,7 +156,7 @@ const HeroSection: NextPage = () => {
           {/* Close Button */}
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute top-[30px] right-[80px] text-white z-10 focus:outline-none"
+            className="absolute top-[30px] right-[40px] md:right-[80px] text-white z-10 focus:outline-none"
           >
             <svg
               className="w-6 h-6 sm:w-8 sm:h-8"
@@ -175,7 +175,7 @@ const HeroSection: NextPage = () => {
           </button>
 
           {/* Logo */}
-          <div className="absolute top-[30px] left-[80px] z-10">
+          <div className="absolute top-[30px] left-[40px] md:left-[80px] z-10">
             <Image
               src="/logo.png"
               alt="Beks Media Logo"
@@ -186,7 +186,7 @@ const HeroSection: NextPage = () => {
 
           {/* Menu Items */}
           <nav className="z-10">
-            <ul className="text-white text-3xl sm:text-4xl font-bold space-y-6">
+            <ul className="text-white text-[32px] md:text-[60px]  font-bold space-y-6">
               <li>
                 <Link href="/" className={isActive("/")}>
                   BEKS MEDIA

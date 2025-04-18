@@ -97,7 +97,7 @@ export default function ArticleClient({
 
   const isActive = (path: string): string =>
     pathname === path
-      ? "text-red-600"
+      ? "text-[#DC2F39]"
       : "hover:text-gray-300 transition duration-300";
 
   if (!blog) {
@@ -153,7 +153,7 @@ export default function ArticleClient({
             </div>
           </div>
 
-          <h1 className="text-3xl uppercase relative z-10 font-sans md:text-5xl font-bold max-w-[750px]">
+          <h1 className="text-3xl uppercase relative z-10 font-inter md:text-5xl font-bold max-w-[750px]">
             {blog.Blog_title}
           </h1>
 
@@ -170,11 +170,13 @@ export default function ArticleClient({
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-lg font-sans">{blog.Author_name}</span>
+              <span className="text-lg font-inter">{blog.Author_name}</span>
             </div>
             <div className="flex items-center gap-1 text-gray-400">
               <Calendar className="w-5 h-5" />
-              <span className="font-sans">{formatDate(blog?.publishedAt)}</span>
+              <span className="font-inter">
+                {formatDate(blog?.publishedAt)}
+              </span>
             </div>
           </div>
 
@@ -190,7 +192,7 @@ export default function ArticleClient({
 
           <div className="max-w-[1080px] mx-auto">
             <div className="flex flex-col justify-center items-center">
-              <span className="mt-[60px] text-[28px] text-white font-sans max-w-[1280px]">
+              <span className="mt-[60px] text-[28px] text-white font-inter max-w-[1280px]">
                 {blog.Blog_Description}
               </span>
             </div>
@@ -214,11 +216,11 @@ export default function ArticleClient({
                       width={32}
                       height={32}
                     />
-                    <h3 className="text-[24px] text-white font-sans uppercase font-semibold">
+                    <h3 className="text-[24px] text-white font-inter uppercase font-semibold">
                       RESEARCH {item}
                     </h3>
                   </div>
-                  <h2 className="text-[30px] font-sans my-4 text-white uppercase md:text-[50px] font-bold mt-2">
+                  <h2 className="text-[30px] font-inter my-4 text-white uppercase md:text-[50px] font-bold mt-2">
                     {blog.heading}
                   </h2>
                   {blog.description &&
@@ -227,7 +229,7 @@ export default function ArticleClient({
                         return (
                           <p
                             key={index}
-                            className="text-[#ADADAD] font-sans text-[16px] md:text-[20px] mt-2"
+                            className="text-[#ADADAD] font-inter text-[16px] md:text-[20px] mt-2"
                           >
                             {(block.children as ParagraphChild[]).map(
                               (child, childIndex) => (
@@ -250,7 +252,7 @@ export default function ArticleClient({
                         return (
                           <ul
                             key={index}
-                            className="list-disc font-sans list-inside mt-2 text-[16px] md:text-[20px] text-[#F0F0F0] space-y-1"
+                            className="list-disc font-inter list-inside mt-2 text-[16px] md:text-[20px] text-[#F0F0F0] space-y-1"
                           >
                             {(block.children as ListItem[]).map(
                               (item, itemIndex) => (
@@ -308,7 +310,7 @@ export default function ArticleClient({
                   />
                 </svg>
               </button>
-              <div className="absolute top-[30px] left-[80px] z-10">
+              <div className="absolute top-[30px] left-[40px] md:left-[80px] z-10">
                 <Image
                   src="/logo.png"
                   alt="Beks Media Logo"
@@ -317,7 +319,7 @@ export default function ArticleClient({
                 />
               </div>
               <nav className="z-10">
-                <ul className="text-white text-3xl sm:text-4xl font-bold space-y-6">
+                <ul className="text-white text-[32px] md:text-[60px]  font-bold space-y-6">
                   <li>
                     <Link href="/" className={isActive("/")}>
                       BEKS MEDIA
@@ -374,18 +376,18 @@ export default function ArticleClient({
                           className="rounded-full mr-3 w-10 h-10"
                         />
                         <div>
-                          <p className="text-white text-[20px] font-sans font-semibold">
+                          <p className="text-white text-[20px] font-inter font-semibold">
                             {post.Author_name}
                           </p>
-                          <p className="text-[#ADADAD] font-sans text-[16px]">
+                          <p className="text-[#ADADAD] font-inter text-[16px]">
                             {formatDate(post?.publishedAt)}
                           </p>
                         </div>
                       </div>
-                      <h2 className="text-[28px] text-white md:text-[32px] font-[700] font-sans mb-4">
+                      <h2 className="text-[28px] text-white md:text-[32px] font-[700] font-inter mb-4">
                         {post.Blog_title}
                       </h2>
-                      <p className="text-[#ADADAD] font-sans mb-6">
+                      <p className="text-[#ADADAD] font-inter mb-6">
                         {post.Blog_Description}
                       </p>
                       <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
@@ -407,7 +409,7 @@ export default function ArticleClient({
                                 <path d="M12 5l7 7-7 7" />
                               </svg>
                             </div>
-                            <span className="text-white font-sans text-sm sm:text-[14px] md:text-[18px] pr-4">
+                            <span className="text-white font-inter text-sm sm:text-[14px] md:text-[18px] pr-4">
                               Read More
                             </span>
                           </button>
@@ -422,7 +424,7 @@ export default function ArticleClient({
                               alt="Share"
                             />
                           </div>
-                          <span className="text-white font-sans text-sm sm:text-[14px] md:text-[18px] pr-4">
+                          <span className="text-white font-inter text-sm sm:text-[14px] md:text-[18px] pr-4">
                             Share Post
                           </span>
                         </button>

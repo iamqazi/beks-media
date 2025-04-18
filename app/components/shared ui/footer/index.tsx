@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-black bg-opacity-30 w-full h-full absolute top-0 left-0 z-0"></div>
+      <div className="bg-black bg-opacity-30 w-full h-full absolute top-0  border-white/45 border-t-[1px] left-0 z-0"></div>
 
       <Image
         src={"/footerblur.png"}
@@ -24,9 +24,9 @@ const Footer: React.FC = () => {
         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-[550px] z-10"
       />
 
-      <div className="container mx-auto px-4 py-8 relative z-10">
+      <div className="container mx-auto px-4 py-[40px] relative z-10 ">
         {/* Rest of your footer content */}
-        <div className="flex flex-col md:flex-row justify-between items-start mb-12">
+        <div className="flex flex-col md:flex-row justify-between border-b-[1px] border-white/45 pb-[42px] items-start mb-12">
           {/* Logo and Description */}
           <div className="mb-8 md:mb-0 max-w-md">
             <div className="mb-4">
@@ -37,8 +37,8 @@ const Footer: React.FC = () => {
                 height={50}
               />
             </div>
-            <p className="text-gray-400 font-sans mb-6">
-              We transform Web 3.0 startups into iconic brands through strategic
+            <p className="text-gray-400 font-inter mb-6">
+              We transform Web 3 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
 
@@ -89,22 +89,22 @@ const Footer: React.FC = () => {
 
           {/* Navigation Links */}
           <div className="flex flex-col sm:flex-row gap-8 md:gap-16">
-            <nav className="flex font-sans flex-col space-y-3">
+            <nav className="flex font-inter flex-col space-y-3">
               <Link
                 href="/"
-                className="hover:text-blue-400 font-sans transition-colors"
+                className="hover:text-blue-400 font-inter transition-colors"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="hover:text-blue-400 font-sans transition-colors"
+                className="hover:text-blue-400 font-inter transition-colors"
               >
                 About Us
               </Link>
               <Link
                 href="/portfolio"
-                className="hover:text-blue-400 font-sans transition-colors"
+                className="hover:text-blue-400 font-inter transition-colors"
               >
                 Portfolio
               </Link>
@@ -112,13 +112,13 @@ const Footer: React.FC = () => {
             <nav className="flex flex-col space-y-3">
               <Link
                 href="/article"
-                className="hover:text-blue-400 font-sans transition-colors"
+                className="hover:text-blue-400 font-inter transition-colors"
               >
                 Blogs
               </Link>
               <Link
                 href="/contact"
-                className="hover:text-blue-400 font-sans transition-colors"
+                className="hover:text-blue-400 font-inter transition-colors"
               >
                 Contact Us
               </Link>
@@ -164,7 +164,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="text-center pt-6 pb-2 font-sans text-sm text-gray-400 relative z-10">
+      <div className="text-center pt-6 pb-2 font-inter text-sm text-gray-400 relative z-10">
         © Copyright 2025 Beks Media
       </div>
     </footer>

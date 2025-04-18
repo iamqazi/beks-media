@@ -7,7 +7,7 @@ const BeksMediaNumbers: React.FC = () => {
   const handleClick = () => {};
   return (
     <div className="flex justify-center items-center min-h-screen bg-black">
-      <div className="bg-black w-full py-16">
+      <div className="bg-black w-full py-[150px] md:py-16">
         <div className="mx-auto px-4">
           {/* Title */}
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16 tracking-wider">
@@ -37,14 +37,17 @@ const BeksMediaNumbers: React.FC = () => {
 
               {/* YouTube Stats */}
               <div className="mt-8">
-                <p className="text-white text-[24px] font-sans text-center md:text-left">
-                  📈 <span className="font-[800]">3M+ views on YouTube</span> in
-                  4 weeks with “Rebekah Jenkins Consulting” the business
+                <p className="text-white text-[24px] font-inter text-center md:text-left">
+                  📈{" "}
+                  <span className="font-[800] font-inter italic ">
+                    3M+ views on YouTube
+                  </span>{" "}
+                  in 4 weeks with “Rebekah Jenkins Consulting” the business
                   advisory branch of our business.
                   <a
                     target="blank"
                     href="https://www.youtube.com/@rebekah.Jenkins"
-                    className="text-red-700 whitespace-normal font-light"
+                    className="text-red-700 font-inter whitespace-normal font-light"
                   >
                     (https://www.youtube.com/ @rebekah.Jenkins)
                   </a>
@@ -73,9 +76,10 @@ const BeksMediaNumbers: React.FC = () => {
                       className="rounded object-contain "
                     />
                   </div>
-                  <p className="text-white font-sans text-[24px] text-center md:text-left">
-                    🎯 <span className="font-[800]">$250M+</span> real world
-                    assets project advisory
+                  <p className="text-white font-inter text-[24px] text-center md:text-left">
+                    🎯{" "}
+                    <span className="font-[800] font-inter italic">$250M+</span>{" "}
+                    real world assets project advisory
                   </p>
                 </div>
 
@@ -97,9 +101,11 @@ const BeksMediaNumbers: React.FC = () => {
                       className="rounded object-contain "
                     />
                   </div>
-                  <p className="text-white font-sans text-[24px] text-center md:text-left">
-                    <span className="font-[800]">9 years</span> of delivering
-                    results and serving our customers
+                  <p className="text-white font-inter text-[24px] text-center md:text-left">
+                    <span className="font-[800] font-inter italic">
+                      9 years
+                    </span>{" "}
+                    of delivering results and serving our customers
                   </p>
                 </div>
               </div>
@@ -115,12 +121,12 @@ const BeksMediaNumbers: React.FC = () => {
               >
                 <div className="flex flex-col sm:items-center md:flex-row md:justify-between md:items-center">
                   <div className="z-10 text-center sm:text-left">
-                    <h2 className="text-white font-sans text-3xl md:text-4xl font-bold leading-tight">
-                      2 World Market Leaders
+                    <h2 className="text-white font-inter italic text-3xl md:text-4xl font-bold leading-tight">
+                      2 World Market Leaders -
                     </h2>
-                    <p className="text-white font-sans text-xl mt-2 mb-6">
+                    <p className="text-white font-inter text-xl mt-2 mb-6">
                       managing multinational campaigns
-                      <br className="hidden font-sans md:block" />
+                      <br className="hidden font-inter md:block" />
                       in multiple languages
                     </p>
                     <Link href="/portfolio" className="cursor-pointer mb-8">

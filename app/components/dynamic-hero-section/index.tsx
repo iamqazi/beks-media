@@ -17,7 +17,7 @@ const HeroSection: NextPage = () => {
   // Fix: Use string instead of 'any' for type safety
   const isActive = (path: string) =>
     pathname === path
-      ? "text-red-600"
+      ? "text-[#DC2F39]"
       : "hover:text-gray-300 transition duration-300";
   return (
     <div className="relative bg-black min-h-screen overflow-hidden">
@@ -79,7 +79,7 @@ const HeroSection: NextPage = () => {
               About Us
             </h1>
             {/* Added Paragraph */}
-            <p className="text-white font-sans text-[18px] md:text-[24px] mt-4 max-w-4xl">
+            <p className="text-white font-inter text-[18px] md:text-[24px] mt-4 max-w-4xl">
               What sets us apart from other marketing agencies is that our team
               is composed of digital nomads who understand the travel lifestyle.
               We know what works and what just doesn&apos;t cut it.We call our
@@ -111,7 +111,7 @@ const HeroSection: NextPage = () => {
             {/* Close Button */}
             <button
               onClick={() => setMenuOpen(false)}
-              className="absolute top-[30px] right-[80px] text-white z-10 focus:outline-none"
+              className="absolute top-[30px] right-[40px] md:right-[80px] text-white z-10 focus:outline-none"
             >
               <svg
                 className="w-6 h-6 sm:w-8 sm:h-8"
@@ -130,7 +130,7 @@ const HeroSection: NextPage = () => {
             </button>
 
             {/* Logo */}
-            <div className="absolute top-[30px] left-[80px] z-10">
+            <div className="absolute top-[30px] left-[40px] md:left-[80px] z-10">
               <Image
                 src="/logo.png"
                 alt="Beks Media Logo"
@@ -141,7 +141,7 @@ const HeroSection: NextPage = () => {
 
             {/* Menu Items */}
             <nav className="z-10">
-              <ul className="text-white text-3xl sm:text-4xl font-bold space-y-6">
+              <ul className="text-white text-[32px] md:text-[60px]  font-bold space-y-6">
                 <li>
                   <Link href="/" className={isActive("/")}>
                     BEKS MEDIA

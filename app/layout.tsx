@@ -16,7 +16,8 @@ export const metadata: Metadata = {
   title: "Beks Media",
   description: "Beks Media",
   icons: [
-    { rel: "icon", url: "/favicon.png" },
+    { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
+    { rel: "icon", url: "/favicon.png", type: "image/png" },
     { rel: "apple-touch-icon", url: "/favicon.png" },
   ],
 };
@@ -28,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
