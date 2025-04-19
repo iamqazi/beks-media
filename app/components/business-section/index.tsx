@@ -78,7 +78,7 @@ const BusinessSection: React.FC = () => {
           onLoadedMetadata={handleVideoLoad}
           className="w-full  sm:object-contain lg:object-cover"
         >
-          <source src="/media.mp4" type="video/mp4" />
+          <source src="/multimedia.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Beks Media",
   description: "Beks Media",
   icons: [
-    { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
-    { rel: "icon", url: "/favicon.png", type: "image/png" },
-    { rel: "apple-touch-icon", url: "/favicon.png" },
+    { rel: "icon", url: "/fav.png", type: "image/svg+xml" },
+    { rel: "icon", url: "/fav.png", type: "image/png" },
+    { rel: "apple-touch-icon", url: "/fav.png" },
   ],
 };
 
