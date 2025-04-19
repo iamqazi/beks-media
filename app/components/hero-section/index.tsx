@@ -88,7 +88,7 @@ const HeroSection: NextPage = () => {
         {/* Main content */}
         <main className="flex-grow flex flex-col justify-center items-center text-center p-4 md:p-8">
           <Image
-            src={"/text.svg"}
+            src={"/text.png"}
             width={100}
             height={100}
             alt="img"
