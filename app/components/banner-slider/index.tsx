@@ -26,48 +26,48 @@ const BannerAnimation = () => {
   const technologies = [
     {
       title: "React",
-      image: "/partners_1.svg",
+      image: "/astrova.png",
       link: "https:www.astorvia.com",
     },
     {
       title: "Tailwind CSS",
-      image: "/partners_2.svg",
+      image: "/senate.png",
       link: "//www.senate-europe.org/",
     },
     {
       title: "GraphQL",
-      image: "/partner11.svg",
+      image: "/conference.png",
       link: "//www.conf3rence.com/",
     },
-    { title: "GraphQL", image: "/partners_4.svg", link: "https://starzz.eu/" },
+    { title: "GraphQL", image: "/starz.png", link: "https://starzz.eu/" },
     {
       title: "GraphQL",
-      image: "/partners_5.svg",
+      image: "/suite.png",
       link: "https://www.finsuiteconsulting.co/",
     },
     {
       title: "GraphQL",
-      image: "/partners_6.svg",
+      image: "/luns.png",
       link: "https://lunadesigner.net/",
     },
     {
       title: "GraphQL",
-      image: "/partners_8.svg",
+      image: "/blockchain.png",
       link: "https://womeninblockchaintalks.com/",
     },
     {
       title: "GraphQL",
-      image: "/partners_9.svg",
+      image: "/TCU.png",
       link: "https://www.thecryptoupdates.com/",
     },
     {
       title: "GraphQL",
-      image: "/partners_10.svg",
+      image: "/element.png",
       link: "https://clementius.com/",
     },
     {
       title: "GraphQL",
-      image: "/startup.svg",
+      image: "/startups.png",
       link: "https//www.urstartupsucks.com/",
     },
   ];
