@@ -1,6 +1,7 @@
 "use client";
 
 import BlogCardsSlider from "@/app/small-image-slider"; // Assuming this is the updated BlogCards component
+import Link from "next/link";
 import React from "react";
 
 // Define the slider image type
@@ -29,7 +30,7 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio1.png",
     services: ["Website Re-design"],
     sliderImages: [
-      { src: "/slider-1.png", alt: "TMN Slide 1" },
+      { src: "/loin.png", alt: "TMN Slide 1" },
       { src: "/slider-1-2.png", alt: "TMN Slide 2" },
       { src: "/slider-1-3.png", alt: "TMN Slide 3" },
       { src: "/slider-1-4.png", alt: "TMN Slide 3" },
@@ -152,7 +153,7 @@ const PortfolioUI: React.FC = () => {
           <div className="container mx-auto px-4 py-16 md:py-20 border-b-[2px] border-[#403E44] relative z-10">
             <div className="flex flex-col lg:flex-row items-end">
               {/* Project Slider */}
-              <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+              <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
                 <BlogCardsSlider images={item.sliderImages} />
               </div>
 
@@ -179,7 +180,10 @@ const PortfolioUI: React.FC = () => {
                   </div>
 
                   {/* View Work Button */}
-                  <button className="bg-[#15131A] w-[187px] h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
+                  <Link
+                    href="/portfolio"
+                    className="bg-[#15131A] w-[187px] h-[56px] p-2 rounded-full inline-flex items-center space-x-2"
+                  >
                     <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg" // SVG namespace from W3C
@@ -199,7 +203,7 @@ const PortfolioUI: React.FC = () => {
                     <span className="text-white pr-4 font-inter text-base">
                       View our Work
                     </span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

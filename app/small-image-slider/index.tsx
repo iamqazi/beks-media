@@ -20,7 +20,7 @@ interface BlogCardsProps {
 const BlogCardsSlider = ({ images }: BlogCardsProps) => {
   return (
     <section className="">
-      <div className="max-w-7xl mx-auto px-5">
+      <div className="max-w-7xl mx-auto ">
         <Swiper
           modules={[Navigation, Pagination]}
           slidesPerView={1}
@@ -40,8 +40,8 @@ const BlogCardsSlider = ({ images }: BlogCardsProps) => {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={400} // Adjust width based on your design
-                  height={400} // Adjust height based on your design
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover lg:object-contain xl:object-cover " // Use object-cover for better cropping
                 />
               </div>
