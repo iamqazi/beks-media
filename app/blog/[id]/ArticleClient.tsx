@@ -181,7 +181,11 @@ export default function ArticleClient({
 
           <div className="mt-6 relative">
             <Image
-              src="/blogbg.jpg"
+              src={
+                blog.Large_thumbnail?.[0]?.formats?.thumbnail?.url ??
+                blog.Large_thumbnail?.[0]?.url ??
+                "/profile.png"
+              }
               alt="Storytelling in Digital Marketing"
               width={800}
               height={400}
