@@ -74,7 +74,6 @@ interface Blogs {
 const BlogCards: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [blogs, setBlogs] = useState<Blogs[] | null>(null);
-  const baseUrl = "https://api.beksmedia.com";
   const pathname = usePathname();
   const isActive = (path: string) =>
     pathname === path
@@ -189,8 +188,8 @@ const BlogCards: React.FC = () => {
                     width={200}
                     height={200}
                     src={
-                      `${baseUrl}${post.thumbnail?.[0]?.formats?.thumbnail?.url}` ||
-                      `${baseUrl}${post.thumbnail?.[0]?.url}` ||
+                      post.thumbnail?.[0]?.formats?.thumbnail?.url ??
+                      post.thumbnail?.[0]?.url ??
                       "/default-small.png"
                     }
                     alt={post.Blog_title}
@@ -201,8 +200,8 @@ const BlogCards: React.FC = () => {
                   <div className="flex items-center mb-4">
                     <Image
                       src={
-                        `${baseUrl}${post.Author_Avatar?.[0]?.formats?.thumbnail?.url}` ||
-                        `${baseUrl}${post.Author_Avatar?.[0]?.url}` ||
+                        post.Author_Avatar?.[0]?.formats?.thumbnail?.url ??
+                        post.Author_Avatar?.[0]?.url ??
                         "/profile.png"
                       }
                       height={50}

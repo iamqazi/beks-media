@@ -1,15 +1,20 @@
-export const fetchEvents = async () => {
+// api.ts
+export async function fetchEvents() {
   try {
-    const res = await fetch("https://api.beksmedia.com/api/blogs?populate=*");
+    const res = await fetch(
+      "https://tasteful-nest-b80876a7c8.strapiapp.com/api/blogs?populate=*"
+    );
+
     if (!res.ok) {
-      throw new Error(`HTTP error! Status: ${res.status}`);
+      const errorData = await res.json();
+      console.error("Error response:", errorData);
+      throw new Error(errorData.error?.message || "Failed to fetch blogs");
     }
 
     const data = await res.json();
-    console.log("Fetched data:", data); // Debugging API response
     return data;
   } catch (error) {
-    console.error("Error fetching events:", error);
-    return null;
+    console.error("Fetch error:", error);
+    throw error;
   }
-};
+}

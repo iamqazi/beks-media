@@ -23,7 +23,7 @@ const HeroSection: NextPage = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src={"/bg.png"}
+          src={"/back.svg"}
           alt="Space background"
           layout="fill"
           objectFit="cover"
@@ -43,7 +43,7 @@ const HeroSection: NextPage = () => {
       </div>
       <div className="absolute top-0 left-0 z-10 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[480px] md:h-[480px]">
         <Image
-          src={"/blur.png"}
+          src={"/blur.svg"}
           alt="Blur effect"
           width={500}
           height={500}
