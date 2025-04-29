@@ -23,39 +23,39 @@ const teamMembers: TeamMember[] = [
   {
     name: "ANDREA WINKLER",
     role: "Chief Public Affairs Officer (CPAO)",
-    imageUrl: "/slider.png",
+    imageUrl: "/team1.png",
   },
   {
     name: "tan bahar",
     role: "European Strategic Advisor and Creative Director.",
-    imageUrl: "/slider2.png",
+    imageUrl: "/team2.png",
   },
   {
     name: "MARVIN BRACKROCK",
     role: "Lead Programmer and Chief Technology Advisor.",
-    imageUrl: "/slider3.png",
+    imageUrl: "/team3.png",
   },
   {
     name: "SELENE MASAT",
     role: "Graphic Designer and Social Media Manager.",
-    imageUrl: "/slider4.png",
+    imageUrl: "/team4.png",
   },
   {
     name: "MANUEL VERRASTRO",
     role: "Programmer and full stack developer.",
-    imageUrl: "/slider5.png",
+    imageUrl: "/team5.png",
   },
 ];
 const teamMember = [
   {
     name: "Julie Jenkins",
     role: "USA Regional Manager",
-    image: "/team1.png", // Replace with the actual path
+    image: "/teams-1.png", // Replace with the actual path
   },
   {
     name: "Joachim Hartkopf",
     role: "Key-Account-Manager",
-    image: "/team2.png", // Replace with the actual path
+    image: "/teams-2.png", // Replace with the actual path
   },
 ];
 const TeamSlider: React.FC = () => {

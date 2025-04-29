@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
                 Blogs
               </Link>
               <Link
-                href="/contact"
+                href="https://calendly.com/beksmedia/beks-media-meeting?month=2025-04"
                 className="hover:text-blue-400 font-inter transition-colors"
               >
                 Contact Us

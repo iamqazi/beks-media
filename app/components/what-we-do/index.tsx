@@ -60,7 +60,7 @@ const WhatWeDoSection: React.FC = () => {
       id: 8,
       title: "KEYNOTE SPEAKER",
       description: "(via Rebekah Jenkins Consulting)",
-      imageSrc: "/image-8.png",
+      imageSrc: "/imahe-8.png",
     },
   ];
 
