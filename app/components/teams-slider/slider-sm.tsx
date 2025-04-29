@@ -9,27 +9,27 @@ const teamMembers = [
   {
     name: "ANDREA WINKLER",
     role: "Chief Public Affairs Officer (CPAO)",
-    imageUrl: "/slider.png",
+    imageUrl: "/team1.png",
   },
   {
     name: "TAN BAHAR",
     role: "European Strategic Advisor and Creative Director.",
-    imageUrl: "/slider2.png",
+    imageUrl: "/team2.png",
   },
   {
     name: "MARVIN BRACKROCK",
     role: "Lead Programmer and Chief Technology Advisor.",
-    imageUrl: "/slider3.png",
+    imageUrl: "/team3.png",
   },
   {
     name: "SELENE MASAT",
     role: "Graphic Designer and Social Media Manager.",
-    imageUrl: "/slider4.png",
+    imageUrl: "/team4.png",
   },
   {
     name: "MANUEL VERRASTRO",
     role: "Programmer and Full Stack Developer.",
-    imageUrl: "/slider5.png",
+    imageUrl: "/team5.png",
   },
 ];
 const teamMember = [
