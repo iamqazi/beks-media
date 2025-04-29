@@ -70,7 +70,7 @@ export default function EmailInput() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full sm:w-[130px] font-inter text-xs sm:text-sm font-medium px-4 py-2 text-black bg-white rounded-md ${
+          className={`w md:w-[170px] h-[54px] font-inter text-xs md:text-[20px] font-medium px-4 py-2 text-black bg-white rounded-md ${
             isSubmitting ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >

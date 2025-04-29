@@ -55,14 +55,14 @@ const teamMember = [
   {
     name: "Joachim Hartkopf",
     role: "Key-Account-Manager",
-    image: "/teams-2.png", // Replace with the actual path
+    image: "/girl.png", // Replace with the actual path
   },
 ];
 const TeamSlider: React.FC = () => {
   return (
     <>
       {" "}
-      <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-20">
+      <h2 className="text-white text-3xl md:text-[48px] font-bold text-center mb-20">
         OUR TEAM
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-center mb-[100px] gap-6 px-6">
@@ -76,7 +76,7 @@ const TeamSlider: React.FC = () => {
               className="rounded-lg object-cover"
             />
             <div className="absolute bottom-0 left-0 w-full p-4">
-              <h3 className="text-white whitespace-normal text-[25px] font-bold">
+              <h3 className="text-white whitespace-normal text-[25px] md:text-[32px] font-bold">
                 {member.name}
               </h3>
               <p className="text-gray-300 font-inter text-[24px]">

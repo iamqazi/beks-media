@@ -34,7 +34,7 @@ const ButtonImage: React.FC<ButtonImageProps> = ({ text, onClick, icon }) => {
             className="w-6 h-6 md:w-5 md:h-5 sm:w-4 sm:h-4"
           />
         )}
-        <span className="text-[18px] "> {text}</span>
+        <span className="text-[24px] "> {text}</span>
       </span>
     </button>
   );

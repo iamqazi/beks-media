@@ -32,7 +32,7 @@ const HeroSection: NextPage = () => {
       </div>
 
       {/* Unicorn silhouette on the bottom left */}
-      <div className="absolute bottom-[420px] left-2 z-10 w-[300px] h-[224px]">
+      <div className="absolute bottom-[250px] left-0 z-10 w-[300px] h-[224px]">
         <Image
           src={"/horse.png"}
           alt="Unicorn silhouette"
@@ -98,7 +98,7 @@ const HeroSection: NextPage = () => {
 
         {/* "SEE OUR WORK" text */}
         <Link href="/portfolio">
-          <div className="absolute -right-16 top-1/2 transform -translate-y-1/2 hidden md:block cursor-pointer">
+          <div className="absolute -right-[80px] top-1/2 transform -translate-y-1/2 hidden md:block cursor-pointer">
             <div className=" flex items-center transform -rotate-90 tracking-wider">
               <Image
                 src={"/Vector.png"}
@@ -123,7 +123,7 @@ const HeroSection: NextPage = () => {
               DESERVES RECOGNITION.
             </div>
             <p className="text-white text-base font-inter text-[18px] md:text-[24px] mb-6 lg:mb-16 max-w-2xl">
-              We transform Web 3startups into iconic brands through strategic
+              We transform Web 3 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
           </div>

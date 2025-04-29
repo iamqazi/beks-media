@@ -33,7 +33,7 @@ const HeroSection: NextPage = () => {
       </div>
 
       {/* Unicorn silhouette on the bottom left */}
-      <div className="absolute bottom-20 left-0 z-10 w-[320px] h-[320px] ">
+      <div className="absolute bottom-[40px] left-0 z-10 w-[220px] h-[200px] md:w-[320px] md:h-[320px] ">
         <Image
           src="/horse3.png"
           alt="Unicorn silhouette"
@@ -79,7 +79,7 @@ const HeroSection: NextPage = () => {
               About Us
             </h1>
             {/* Added Paragraph */}
-            <p className="text-white font-inter text-[18px] md:text-[24px] mt-4 max-w-4xl">
+            <p className="text-white font-inter text-[18px] md:text-[24px]  max-w-4xl">
               What sets us apart from other marketing agencies is that our team
               is composed of digital nomads who understand the travel lifestyle.
               We know what works and what just doesn&apos;t cut it.We call our

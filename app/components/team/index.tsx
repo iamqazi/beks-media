@@ -94,7 +94,7 @@ const TeamSection: React.FC = () => {
               <h2 className="text-4xl md:text-[44px] font-[800]">
                 {member.name}
               </h2>
-              <p className="text-gray-400 font-akira font-[800] uppercase tracking-wider">
+              <p className="text-gray-400 font-inter font-[800] uppercase tracking-wider">
                 {member.title}
               </p>
               <p className="text-[18px] leading-[28px] font-[300] md:text-[24px] text-justify font-inter ">

@@ -7,10 +7,10 @@ const BeksMediaNumbers: React.FC = () => {
   const handleClick = () => {};
   return (
     <div className="flex justify-center items-center min-h-screen bg-black">
-      <div className="bg-black w-full py-[150px] md:py-16">
+      <div className="bg-black w-full py-[150px] md:py-[140px]">
         <div className="mx-auto px-4">
           {/* Title */}
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16 tracking-wider">
+          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-[70px] tracking-wider">
             BEKS MEDIA IN NUMBERS
           </h2>
 
@@ -47,7 +47,7 @@ const BeksMediaNumbers: React.FC = () => {
                   <a
                     target="blank"
                     href="https://www.youtube.com/@rebekah.Jenkins"
-                    className="text-red-700 font-inter whitespace-normal font-light"
+                    className="text-[#E85E66] font-inter whitespace-normal font-light"
                   >
                     (https://www.youtube.com/ @rebekah.Jenkins)
                   </a>
@@ -121,10 +121,10 @@ const BeksMediaNumbers: React.FC = () => {
               >
                 <div className="flex flex-col sm:items-center md:flex-row md:justify-between md:items-center">
                   <div className="z-10 text-center sm:text-left">
-                    <h2 className="text-white font-inter italic text-3xl md:text-4xl font-bold leading-tight">
+                    <h2 className="text-white font-inter italic text-3xl md:text-[24px] font-bold leading-tight">
                       2 World Market Leaders -
                     </h2>
-                    <p className="text-white font-inter text-xl mt-2 mb-6">
+                    <p className="text-white font-inter text-[24px] mt-2 mb-6">
                       managing multinational campaigns
                       <br className="hidden font-inter md:block" />
                       in multiple languages

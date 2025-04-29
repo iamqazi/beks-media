@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-[550px] z-10"
       />
 
-      <div className="container mx-auto px-4 py-[40px] relative z-10 ">
+      <div className="container mx-auto lg:px-0 px-4 py-[40px] relative z-10 ">
         {/* Rest of your footer content */}
         <div className="flex flex-col md:flex-row justify-between border-b-[1px] border-white/45 pb-[42px] items-start mb-12">
           {/* Logo and Description */}
