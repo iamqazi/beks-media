@@ -30,7 +30,7 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio1.png",
     services: ["Website Re-design"],
     sliderImages: [
-      { src: "/loin.png", alt: "TMN Slide 1" },
+      { src: "/slider-1-1.png", alt: "TMN Slide 1" },
       { src: "/slider-1-2.png", alt: "TMN Slide 2" },
       { src: "/slider-1-3.png", alt: "TMN Slide 3" },
       { src: "/slider-1-4.png", alt: "TMN Slide 3" },
@@ -43,7 +43,7 @@ const portfolioData: PortfolioItem[] = [
       "Social posts created and designed to boost your brand and emphasize your online presence.",
     image: "/portfolio2.png",
     services: ["Social Media Design"],
-    sliderImages: [{ src: "/portfolio2.png", alt: "TMN Slide 3" }],
+    sliderImages: [{ src: "/slider-2.png", alt: "TMN Slide 3" }],
   },
   {
     id: 3,
@@ -53,9 +53,9 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio3.png",
     services: ["Website Design", "Event Planning"],
     sliderImages: [
-      { src: "/slider-2-1.png", alt: "FL Slide 1" },
-      { src: "/slider-2-2.png", alt: "FL Slide 2" },
-      { src: "/slider-2-3.png", alt: "FL Slide 3" },
+      { src: "/slider-3-1.png", alt: "FL Slide 1" },
+      { src: "/slider-3-2.png", alt: "FL Slide 2" },
+      { src: "/slider-3-3.png", alt: "FL Slide 3" },
     ],
   },
   {
@@ -66,9 +66,9 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio4.png",
     services: ["Print Graphics"],
     sliderImages: [
-      { src: "/slider-3-1.png", alt: "Print Slide 1" },
-      { src: "/slider-3-2.png", alt: "Print Slide 2" },
-      { src: "/slider-3-3.png", alt: "Print Slide 3" },
+      { src: "/slider-4-1.png", alt: "Print Slide 1" },
+      { src: "/slider-4-2.png", alt: "Print Slide 2" },
+      { src: "/slider-4-3.png", alt: "Print Slide 3" },
     ],
   },
   {
@@ -79,9 +79,9 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio5.png",
     services: ["Sticker Design"],
     sliderImages: [
-      { src: "/slider-4-1.png", alt: "Women Slide 1" },
-      { src: "/slider-4-2.png", alt: "Women Slide 2" },
-      { src: "/slider-4-3.png", alt: "Women Slide 3" },
+      { src: "/slider-5-1.png", alt: "Women Slide 1" },
+      { src: "/slider-5-2.png", alt: "Women Slide 2" },
+      { src: "/slider-5-3.png", alt: "Women Slide 3" },
     ],
   },
   {
@@ -92,9 +92,10 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio6.png",
     services: ["Social Media Design"],
     sliderImages: [
-      { src: "/slider-5-1.png", alt: "Color Pop Slide 1" },
-      { src: "/slider-5-2.png", alt: "Color Pop Slide 2" },
-      { src: "/slider-5-3.png", alt: "Color Pop Slide 3" },
+      { src: "/slider-6-1.png", alt: "Color Pop Slide 1" },
+      { src: "/slider-6-2.png", alt: "Color Pop Slide 2" },
+      { src: "/slider-6-3.png", alt: "Color Pop Slide 3" },
+      { src: "/slider-6-4.png", alt: "Color Pop Slide 4" },
     ],
   },
   // Add remaining 3 portfolios (total 9) with unique slider images as needed
@@ -106,10 +107,10 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio7.png",
     services: ["Branding"],
     sliderImages: [
-      { src: "/slider-6-1.png", alt: "Project 7 Slide 1" },
-      { src: "/slider-6-2.png", alt: "Project 7 Slide 2" },
-      { src: "/slider-6-3.png", alt: "Project 7 Slide 3" },
-      { src: "/slider-6-4.png", alt: "Project 7 Slide 3" },
+      { src: "/slider-7-1.png", alt: "Project 7 Slide 1" },
+      { src: "/slider-7-2.png", alt: "Project 7 Slide 2" },
+      { src: "/slider-7-3.png", alt: "Project 7 Slide 3" },
+      { src: "/slider-7-4.png", alt: "Project 7 Slide 3" },
     ],
   },
   {
@@ -120,9 +121,9 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio8.png",
     services: ["UI/UX Design"],
     sliderImages: [
-      { src: "/slider-7-1.png", alt: "Project 8 Slide 1" },
-      { src: "/slider-7-2.png", alt: "Project 8 Slide 2" },
-      { src: "/slider-7-3.png", alt: "Project 8 Slide 3" },
+      { src: "/slider-8-1.png", alt: "Project 8 Slide 1" },
+      { src: "/slider-8-2.png", alt: "Project 8 Slide 2" },
+      { src: "/slider-8-3.png", alt: "Project 8 Slide 3" },
     ],
   },
   {
@@ -133,8 +134,8 @@ const portfolioData: PortfolioItem[] = [
     image: "/portfolio9.png",
     services: ["Web Development"],
     sliderImages: [
-      { src: "/slider-img.png", alt: "Project 9 Slide 1" },
-      { src: "/slider-images.png", alt: "Project 9 Slide 2" },
+      { src: "/slider-9-1.png", alt: "Project 9 Slide 1" },
+      { src: "/slider-9-2.png", alt: "Project 9 Slide 2" },
     ],
   },
 ];

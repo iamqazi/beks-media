@@ -61,7 +61,7 @@ export async function generateStaticParams() {
   const data = await fetchEvents();
   const blogs = data?.data || [];
 
-  console.log("Blogs in generateStaticParams:", JSON.stringify(blogs, null, 2)); // Debug
+  console.log("Blogs in generateStaticParams:", JSON.stringify(blogs, null, 2));
 
   if (!blogs.length) {
     console.warn("No blogs found, returning empty params");

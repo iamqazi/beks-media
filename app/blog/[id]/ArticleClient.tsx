@@ -3,12 +3,13 @@
 
 import Image from "next/image";
 import { Calendar } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Insight from "../../components/insights";
 import Footer from "../../components/shared ui/footer";
 import { format } from "date-fns";
+import { fetchEvents } from "@/app/lib/api";
 
 interface ParagraphChild {
   type: string;
@@ -85,6 +86,19 @@ export default function ArticleClient({
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const data = await fetchEvents();
+        console.log("mount", data);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      }
+    }
+
+    getData();
+  }, []);
 
   const formatDate = (dateString?: string): string => {
     if (!dateString) return "Unknown Date";

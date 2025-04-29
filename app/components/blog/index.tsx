@@ -210,18 +210,18 @@ const BlogCards: React.FC = () => {
                       className="rounded-full mr-3 w-10 h-10"
                     />
                     <div>
-                      <p className="text-white text-[20px] font-inter font-semibold">
+                      <p className="text-white text-[20px] font-inter heading-normal font-semibold">
                         {post.Author_name}
                       </p>
-                      <p className="text-[#ADADAD] font-inter text-[16px]">
+                      <p className="text-[#ADADAD] font-inter heading-normal text-[16px]">
                         {formatDate(post?.publishedAt)}
                       </p>
                     </div>
                   </div>
-                  <h2 className="text-[28px] text-white md:text-[32px] font-[700] font-inter mb-4">
+                  <h2 className="text-[28px] text-white heading-normal md:text-[32px] font-[700] font-inter mb-4">
                     {post.Blog_title}
                   </h2>
-                  <p className="text-[#ADADAD] font-inter mb-6">
+                  <p className="text-[#ADADAD] heading-normal font-inter mb-6">
                     {post.Blog_Description}
                   </p>
                   <div className="flex space-x-4">

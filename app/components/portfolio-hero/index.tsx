@@ -25,7 +25,7 @@ const PortfolioHero: NextPage = () => {
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/bg1.jpg"
+          src="/newbg.png"
           alt="Space background"
           layout="fill"
           objectPosition="center"
