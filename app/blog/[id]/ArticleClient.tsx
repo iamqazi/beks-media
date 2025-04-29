@@ -331,8 +331,8 @@ export default function ArticleClient({
                 <Image
                   src="/logo.png"
                   alt="Beks Media Logo"
-                  width={80}
-                  height={80}
+                  width={122}
+                  height={41}
                 />
               </div>
               <nav className="z-10">

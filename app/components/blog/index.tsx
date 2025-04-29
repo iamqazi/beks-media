@@ -183,7 +183,7 @@ const BlogCards: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] w-full max-w-[1200px]">
             {blogs.map((post) => (
               <div key={post.id} className="overflow-hidden">
-                <div className="relative w-full h-[400px]">
+                <div className="relative w-full h-[280px] md:h-[400px]">
                   <Image
                     width={200}
                     height={200}
@@ -224,7 +224,7 @@ const BlogCards: React.FC = () => {
                   <p className="text-[#ADADAD] leading-tight font-inter mb-6">
                     {post.Blog_Description}
                   </p>
-                  <div className="flex space-x-4">
+                  <div className="flex lg:flex-row flex-col space-x-0 gap-4 lg:gap-0 lg:space-x-4 ">
                     <Link href={`/blog/${post.id}`}>
                       <button className="bg-[#15131A] w-[187px] h-[50px] md:h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
                         <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">

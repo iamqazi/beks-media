@@ -19,7 +19,7 @@ const ButtonImage: React.FC<ButtonImageProps> = ({ text, onClick, icon }) => {
         height={80}
         src="/button.png"
         alt="Button"
-        className="w-[350px] h-auto md:w-[250px] sm:w-[200px]"
+        className="w-[350px] h-auto md:w-[250px] sm:w-[300px]"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
 
@@ -34,7 +34,10 @@ const ButtonImage: React.FC<ButtonImageProps> = ({ text, onClick, icon }) => {
             className="w-6 h-6 md:w-5 md:h-5 sm:w-4 sm:h-4"
           />
         )}
-        <span className="text-[24px] "> {text}</span>
+        <span className="md:text-[18px] text-[16px]  lg:text-[18px] ">
+          {" "}
+          {text}
+        </span>
       </span>
     </button>
   );

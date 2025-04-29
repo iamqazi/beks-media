@@ -46,9 +46,9 @@ const HeroSection: NextPage = () => {
       {/* Content container */}
       <div className="relative z-10 flex flex-col min-h-screen">
         {/* Header */}
-        <header className="p-4 md:p-8">
+        <header className="py-[30px] px-4 md:px-[80px]  md:p-[30px]">
           <div className="flex justify-between items-center">
-            <Image src="/logo.png" height={50} width={100} alt="img" />
+            <Image src="/logo.png" height={41} width={122} alt="img" />
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white focus:outline-none"
@@ -134,8 +134,8 @@ const HeroSection: NextPage = () => {
               <Image
                 src="/logo.png"
                 alt="Beks Media Logo"
-                width={80}
-                height={80}
+                width={122}
+                height={41}
               />
             </div>
 

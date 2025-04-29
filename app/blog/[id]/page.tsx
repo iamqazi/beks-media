@@ -1,5 +1,5 @@
+import Blog14 from "@/app/blog-14/blog14";
 import { fetchEvents } from "../../lib/api";
-import ArticleClient from "./ArticleClient";
 
 // Interface for blog data, adjusted for typical Strapi media fields
 interface Blogs {
@@ -94,5 +94,5 @@ export default async function ArticlePage({
     );
   }
 
-  return <ArticleClient blog={blog} blogs={blogs} id={id} />;
+  return <Blog14 />;
 }

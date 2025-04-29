@@ -15,17 +15,17 @@ const BeksMediaNumbers: React.FC = () => {
           </h2>
 
           {/* Main Container */}
-          <div className="flex xl:flex-row md:flex-col flex-col justify-center gap-6">
+          <div className="flex xl:flex-row  md:flex-col flex-col items-center justify-center gap-6">
             {/* First Card */}
             <div
-              className="bg-[#101010] rounded-lg overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full md:w-[452px]"
+              className="bg-[#101010] rounded-lg overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full lg:w-[452px]"
               style={{
                 borderImageSource:
                   "linear-gradient(94.9deg, rgba(255, 255, 255, 0.15) 16%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.15) 37%)",
                 borderImageSlice: 1,
               }}
             >
-              <div className="relative h-64 md:h-[300px] w-full mb-6">
+              <div className="relative h-64 lg:h-[300px] w-full mb-6">
                 <Image
                   src="/image44.png"
                   alt="Mobile App Designs"
@@ -47,7 +47,7 @@ const BeksMediaNumbers: React.FC = () => {
                   <a
                     target="blank"
                     href="https://www.youtube.com/@rebekah.Jenkins"
-                    className="text-[#E85E66] font-inter whitespace-normal font-light"
+                    className="text-[#E85E66] italic font-inter whitespace-normal font-light"
                   >
                     (https://www.youtube.com/ @rebekah.Jenkins)
                   </a>
@@ -66,7 +66,7 @@ const BeksMediaNumbers: React.FC = () => {
                       "linear-gradient(94.9deg, rgba(255, 255, 255, 0.15) 16%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.15) 37%)",
                     borderImageSlice: 1,
                   }}
-                  className="bg-zinc-900  overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full md:h-[318px]  md:w-[385px]"
+                  className="bg-zinc-900  overflow-hidden p-[22px] border-[0.94px] border-transparent relative w-full md:h-[318px]  lg:w-[385px]"
                 >
                   <div className="relative h-[175px] w-full mb-2">
                     <Image
@@ -90,7 +90,7 @@ const BeksMediaNumbers: React.FC = () => {
                       "linear-gradient(94.9deg, rgba(255, 255, 255, 0.15) 16%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.15) 37%)",
                     borderImageSlice: 1,
                   }}
-                  className=" overflow-hidden p-[22px] border-[0.94px] h-[318px] relative w-full md:max-w-[385px] 
+                  className=" overflow-hidden p-[22px] border-[0.94px] h-[318px] relative w-full lg:max-w-[385px] 
                  bg-[url('/blue.png')] bg-cover bg-center"
                 >
                   <div className="relative h-[175px] w-full mb-2">

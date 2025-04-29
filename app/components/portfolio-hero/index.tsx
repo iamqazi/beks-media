@@ -49,7 +49,7 @@ const PortfolioHero: NextPage = () => {
         {/* Header */}
         <header className="p-4 sm:p-6 md:p-8">
           <div className="flex justify-between items-center">
-            <Image src="/logo.png" height={50} width={120} alt="img" />
+            <Image src="/logo.png" height={41} width={122} alt="img" />
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white focus:outline-none p-2"
@@ -132,8 +132,8 @@ const PortfolioHero: NextPage = () => {
               <Image
                 src="/logo.png"
                 alt="Beks Media Logo"
-                width={80}
-                height={80}
+                width={122}
+                height={41}
               />
             </div>
 

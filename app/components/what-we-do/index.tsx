@@ -87,7 +87,7 @@ const WhatWeDoSection: React.FC = () => {
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[34px] font-[800] leading-[40px] tracking-wider mb-2 md:mb-0 md:max-w-[50%]">
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-right font-inter text-gray-400 md:max-w-[50%]">
+                <p className="text-sm sm:text-base md:text-lg lg:text-[26px] text-right font-inter text-gray-400 md:max-w-[50%]">
                   {service.description}
                 </p>
               </div>

@@ -37,8 +37,8 @@ const Footer: React.FC = () => {
                 height={50}
               />
             </div>
-            <p className="text-gray-400 font-inter mb-6">
-              We transform Web 3 startups into iconic brands through strategic
+            <p className="text-[#ADADAD] text-[18px] font-inter mb-6">
+              We transform Web3 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
 
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
 
           {/* Navigation Links */}
           <div className="flex flex-col sm:flex-row gap-8 md:gap-16">
-            <nav className="flex font-inter flex-col space-y-3">
+            <nav className="flex font-inter text-[#F0F0F0] flex-col space-y-3">
               <Link
                 href="/"
                 className="hover:text-blue-400 font-inter transition-colors"
@@ -164,7 +164,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="text-center pt-6 pb-2 font-inter text-sm text-gray-400 relative z-10">
+      <div className="text-center pt-6 pb-[35px] font-inter text-sm text-gray-400 relative z-10">
         © Copyright 2025 Beks Media
       </div>
     </footer>

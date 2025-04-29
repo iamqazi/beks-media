@@ -45,10 +45,10 @@ export default function EmailInput() {
   };
 
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full max-w-[670px] mx-auto flex justify-center items-center ">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-row gap-2 sm:gap-0 items-stretch sm:items-center max-w-md w-full p-2 bg-transparent rounded-lg border border-white/15"
+        className="flex flex-col sm:flex-row gap-2 sm:gap-0 justify-center items-center md:w-[670px] w-full p-2 bg-transparent rounded-lg border border-white/15"
       >
         <input
           type="email"
@@ -70,7 +70,7 @@ export default function EmailInput() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w md:w-[170px] h-[54px] font-inter text-xs md:text-[20px] font-medium px-4 py-2 text-black bg-white rounded-md ${
+          className={`w-full md:w-[170px] h-[54px] font-inter text-xs md:text-[20px] font-medium px-4 py-2 text-black bg-white rounded-md ${
             isSubmitting ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >

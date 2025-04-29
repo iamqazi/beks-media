@@ -32,7 +32,7 @@ const HeroSection: NextPage = () => {
       </div>
 
       {/* Unicorn silhouette on the bottom left */}
-      <div className="absolute bottom-[250px] left-0 z-10 w-[300px] h-[224px]">
+      <div className="absolute md:bottom-[250px] left-0 z-10 w-[100px] bottom-[370px] md:w-[300px] h-[100px] md:h-[224px]">
         <Image
           src={"/horse.png"}
           alt="Unicorn silhouette"
@@ -60,7 +60,7 @@ const HeroSection: NextPage = () => {
               src={"/logo.png"}
               alt="Blur effect"
               width={122}
-              height={50}
+              height={41}
               objectFit="contain"
             />
           </div>
@@ -98,7 +98,7 @@ const HeroSection: NextPage = () => {
 
         {/* "SEE OUR WORK" text */}
         <Link href="/portfolio">
-          <div className="absolute -right-[80px] top-1/2 transform -translate-y-1/2 hidden md:block cursor-pointer">
+          <div className="absolute -right-[80px] top-[400px] transform -translate-y-1/2 hidden md:block cursor-pointer">
             <div className=" flex items-center transform -rotate-90 tracking-wider">
               <Image
                 src={"/Vector.png"}
@@ -123,7 +123,7 @@ const HeroSection: NextPage = () => {
               DESERVES RECOGNITION.
             </div>
             <p className="text-white text-base font-inter text-[18px] md:text-[24px] mb-6 lg:mb-16 max-w-2xl">
-              We transform Web 3 startups into iconic brands through strategic
+              We transform Web3 startups into iconic brands through strategic
               storytelling and marketing.
             </p>
           </div>
@@ -179,8 +179,8 @@ const HeroSection: NextPage = () => {
             <Image
               src="/logo.png"
               alt="Beks Media Logo"
-              width={80}
-              height={80}
+              width={122}
+              height={41}
             />
           </div>
 
