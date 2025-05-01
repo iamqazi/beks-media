@@ -225,7 +225,7 @@ const BlogCards: React.FC = () => {
                     {post.Blog_Description}
                   </p>
                   <div className="flex lg:flex-row flex-col space-x-0 gap-4 lg:gap-0 lg:space-x-4 ">
-                    <Link href={`/blog/${post.id}`}>
+                    <Link href={`/blog-14`}>
                       <button className="bg-[#15131A] w-[187px] h-[50px] md:h-[56px] p-2 rounded-full inline-flex items-center space-x-2">
                         <div className="w-8 h-8 bg-[#18529D] rounded-full flex items-center justify-center">
                           <svg

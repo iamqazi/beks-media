@@ -160,7 +160,10 @@ export default function Blog14() {
                 />
               </div>
               <div>
-                <button className="text-white focus:outline-none">
+                <button
+                  onClick={() => setMenuOpen(true)}
+                  className="text-white focus:outline-none"
+                >
                   <svg
                     className="w-6 h-6 sm:w-8 sm:h-8"
                     fill="none"
@@ -288,7 +291,7 @@ export default function Blog14() {
               />
               <button
                 onClick={() => setMenuOpen(false)}
-                className="absolute top-4 right-4 text-white z-10 focus:outline-none"
+                className="absolute top-[35px] right-4 md:right-[80px] text-white z-10 focus:outline-none"
               >
                 <svg
                   className="w-6 h-6 sm:w-8 sm:h-8"
