@@ -57,28 +57,30 @@ interface Paragraph {
 }
 
 // Generate static parameters for all blog posts
-export async function generateStaticParams() {
-  const data = await fetchEvents();
-  const blogs = data?.data || [];
+// export async function generateStaticParams() {
+//   const data = await fetchEvents();
+//   const blogs = data?.data || [];
 
-  console.log("Blogs in generateStaticParams:", JSON.stringify(blogs, null, 2));
+//   console.log("Blogs in generateStaticParams:", JSON.stringify(blogs, null, 2));
 
-  if (!blogs.length) {
-    console.warn("No blogs found, returning empty params");
-    return [];
-  }
+//   if (!blogs.length) {
+//     console.warn("No blogs found, returning empty params");
+//     return [];
+//   }
 
-  // Return the params object for dynamic routes
-  return blogs.map((blog: Blogs) => ({
-    id: blog.id.toString(), // Ensure ID is a string for Next.js
-  }));
-}
+//   // Return the params object for dynamic routes
+//   return blogs.map((blog: Blogs) => ({
+//     id: blog.id.toString(), // Ensure ID is a string for Next.js
+//   }));
+// }
 
 // Server component to fetch and render blog data
 export default async function ArticlePage({
   params,
 }: {
-  params: Awaited<ReturnType<typeof generateStaticParams>>[number];
+  // params: Awaited<ReturnType<typeof generateStaticParams>>[number];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  params: any;
 }) {
   const { id } = params;
   const data = await fetchEvents();
